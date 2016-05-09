@@ -1,0 +1,6 @@
+name: OBO Foundry
+title: The OBO Foundry
+markdown: kramdown
+pygments: true
+baseurl: /
+imgurl: /images
