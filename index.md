@@ -5,13 +5,6 @@ homepage: true
 published: true
 ---
 
-# What's New
-
-* [New Apollo Release 2.0.2](https://github.com/GMOD/Apollo/releases/latest)
-* [Apollo cheat sheet](apollo-cheat-sheet)
-* [Implementing Apollo for your community!](integrating-apollo)
-* [Looking for Desktop Apollo?](old-apollo)
-
 # Apollo
 
 ### First instantaneous, collaborative genomic annotation editor available on the Web.
@@ -38,6 +31,7 @@ Try Apollo at our [Public Demo](public-demo), built with the genome of several o
 
 * [Download Apollo](https://github.com/GMOD/Apollo/releases/latest)
 * [Our code on Github](https://github.com/GMOD/Apollo)
+* [Looking for Desktop Apollo?](old-apollo)
 
 ### Documentation
 
