@@ -1,0 +1,147 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+# Sidebar
+entries:
+- title: Sidebar
+  subcategories:
+
+    - title: About
+      print: true
+
+      items:
+
+        - title: Welcome
+          url: "/index.html"
+
+
+
+
+    - title: Projects
+      print: true
+      items:
+        - title: Gene Ontology
+          url: /project/gene-ontology
+
+        - title: Monarch
+          url: /project/monarch
+          
+        - title: GMOD
+          url: /project/gmod
+          
+        - title: OBO Foundry
+          url: /project/obo-foundry
+          
+        - title: Uberon
+          url: /project/uberon
+          
+        - title: FANTOM5 Ontology
+          url: /project/fantom-ontology
+          
+        - title: "Planteome"
+          url: /project/planteome
+
+        - title: "Phenoscape"
+          url: /project/phenoscape
+
+        - title: BioCaddie
+          url: /project/biocaddie
+
+
+    - title: Software
+      print: true
+      items:
+        - title: AmiGO
+          url: /software/amigo
+
+        - title: Apollo
+          url: /software/apollo
+
+        - title: Noctua
+          url: /software/noctua
+
+        - title: Chado
+          url: /software/chado
+
+        - title: OwlSim
+          url: /software/owlsim
+
+        - title: OWLTools
+          url: /software/owltools
+
+        - title: kBOOM
+          url: /software/kboom
+
+        - title: TermGenie
+          url: /software/termgenie
+
+        - title: Dipper
+          url: /software/dipper
+
+        - title: PAINT
+          url: /software/paint
+
+        - title: SciGraph
+          url: /software/scigraph
+
+        - title: Phenote
+          url: /software/phenote
+
+        - title: OBO-Edit
+          url: /software/oboedit
+          
+    - title: Research
+      items:
+        - title: "Data Integration"
+          url: /research/data-integration
+
+        - title: "Environments"
+          url: /research/environments
+
+        - title: "Evolution"
+          url: /research/evolution
+
+        - title: "Functional Genomics"
+          url: /research/functional-genomics
+
+        - title: "Ontologies"
+          url: /research/ontologies
+
+        - title: "Phenomics"
+          url: /research/phenomics
+
+        - title: "Software and Infrastructure"
+          url: /research/software-and-infrastructure
+
+
+
+      
+    - title: Publications
+      items:
+        - title: Selected
+          url: /publications_selected.html
+
+        - title: All
+          url: /publications_all.html
+
+    - title: People
+      items:
+        - title: Chris Mungall
+          url: /people/chris-mungall/
+        - title: Heiko Dietze
+          url: /people/heiko-dietze
+        - title: Jeremy Nguyen Xuan
+          url: /people/jeremy-nguyen-xuan
+        - title: Monica Munoz-Torres
+          url: /people/monica-munoz-torres
+        - title: Nathan Dunn
+          url: /people/nathan-dunn
+        - title: Seth Carbon
+          url: /people/seth-carbon
+        - title: Suzanna Lewis
+          url: /people/seth-carbon
+
+      
+
+
+
+       

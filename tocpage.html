@@ -1,0 +1,34 @@
+---
+type: frontmatter
+search: exclude
+---
+
+<!-- new page -->
+<div id="navig">
+    <h1>Table of Contents</h1>
+    {% include custom/conditions.html %}
+
+    <ul id="mysidebar" class="nav">
+        {% for entry in sidebar %}
+        {% for subcategory in entry.subcategories %}
+        <li class="sectionHead">{{ subcategory.title }}
+            <ul>
+                {% for item in subcategory.items %}
+                <li><a href="{{item.url }}">{{item.title}}</a>
+                    {% for thirdlevel in item.thirdlevel %}
+                <li class="sectionHead">{{ thirdlevel.title }}
+                    <ul>
+                        {% for deeplevel in thirdlevel.thirdlevelitems%}
+                        <li><a href="{{deeplevel.url }}">{{deeplevel.title}} -- {{deeplevel.url }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+        </li>
+        {% endfor %}
+    </ul>
+    </li>
+    {% endfor %}
+    {% endfor %}
+    </ul>
+</div>
