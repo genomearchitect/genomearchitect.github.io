@@ -3,6 +3,7 @@ title: Introduction
 type: first_page
 homepage: true
 published: true
+logo: 300px-ApolloLogo.png
 ---
 
 # Apollo
