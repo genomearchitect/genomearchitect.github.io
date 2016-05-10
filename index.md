@@ -33,20 +33,23 @@ Try Apollo at our [Public Demo](public-demo), built with the genome of several o
 * [Download Apollo](https://github.com/GMOD/Apollo/releases/latest)
 * [Our code on Github](https://github.com/GMOD/Apollo)
 * [Looking for Desktop Apollo?](old-apollo)
+* An older version of Apollo may also be installed using "[GMOD in a box](http://gmod.org/wiki/Box)" and "[GMOD in the Cloud](http://gmod.org/wiki/Box)"
+
 
 ### Documentation
 
-* [Roadmap in github milestones](https://github.com/GMOD/Apollo/milestones)
-* [User guides, instructions on Apollo Web API, and Tutorial at GMOD Summer School](documentation)
+* [User guide](apollo-users-guide)
 * [Installation and configuration guide](http://genomearchitect.readthedocs.org/en/latest/)
+* [Roadmap in github milestones](https://github.com/GMOD/Apollo/milestones)
+* [Instructions on Apollo Web API, and Tutorial at GMOD Summer School](documentation)
 * [Report issues on Github](https://github.com/GMOD/Apollo/issues)
-* Questions can be sent to our [Apollo user mailing list](mailto:apollo@lists.lbl.gov). 
-You can subscribe by [sending this email](mailto:) or [fill out this form](https://docs.google.com/forms/d/1PkOm2SKiaAiAhCaMHEc0YFwFZ9nrZaZkbt29R8PW-W8/viewform?usp=send_form) to subscribe to the list or use a [sympa command](http://www.sympa.org/manual/sympa-commands) sent to [```sympa@lists.lbl.gov```](mailto:sympa@lists.lbl.gov).
+* {% include contact.md %}
 * Alternative [gmane](http://blog.gmane.org/gmane.science.biology.gmod.apollo) and [nabble](http://gmod.827538.n3.nabble.com/Apollo-f815553.html) archive interface for the Apollo mailing list for posting and searching archives.
 
 ### Collaborations
 * [The JBrowse Genome Browser](http://jbrowse.org)
 * [The Generic Model Organism Database (GMOD)](http://gmod.org)
+* [Our Team](about-us)
 
 
 ---
@@ -59,3 +62,4 @@ Apollo is supported by the National Institutes of Health grant [5R01GM080203](ht
 Please cite the use of Apollo as: Lee E, Helt GA, Reese JT, Munoz-Torres MC, Childers CP, Buels RM, Stein L, Holmes IH, Elsik CG, Lewis SE. 2013. Apollo: a web-based genomic annotation editing platform. [Genome Biol 14:R93](http://genomebiology.com/2013/14/8/R93/abstract).
 
 <small>Image credits: Bee CopyRight of www.AlexanderWild.com | DNA image ShutterStock.com</small>
+
