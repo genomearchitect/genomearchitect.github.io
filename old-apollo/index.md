@@ -9,7 +9,7 @@ If your team is currently performing manual annotations using the desktop versio
 
 Please be aware that we are no longer developing this software, and support for its use has been discontinued.
 
-All the functionality you came to expect from the desktop version of Apollo and new annotation functions are now available on Web Apollo. Give it a try at our [Public Demo](../public-demo/index.md), built with the genome of the honey bee (<i>Apis mellifera</i>).
+All the functionality you came to expect from the desktop version of Apollo and new annotation functions are now available on Apollo. Give it a try at our [Public Demo](../public-demo/index.md), built with the genome of the honey bee (<i>Apis mellifera</i>).
 
 --- 
 
