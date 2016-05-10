@@ -155,9 +155,10 @@ The URL from the browser window can be shared with collaborators as a permanent 
 
 <center>
 <img src="/images/Web_Apollo_User_Guide_Fig1_B.png" width="700" height="430">
+<br>
+<b>Figure 1.</b> Apollo Annotation Editor Overview. This view shows an annotation in progress. The main interface is similar to JBrowse, with available tracks displayed as a set of tiles along the left side of the main panel. To turn a track on or off, click the box in front of the track title from the column on the left. A. The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the group (scaffold or chromosome) for annotation, and the text-box is used to manually enter its coordinates. B. The ‘User-created Annotations’ panel contains the manual annotations. C. The ‘Evidence’ panel contains the evidence tracks. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. 
 </center>
 
-<b>Figure 1.</b> Apollo Annotation Editor Overview. This view shows an annotation in progress. The main interface is similar to JBrowse, with available tracks displayed as a set of tiles along the left side of the main panel. To turn a track on or off, click the box in front of the track title from the column on the left. A. The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the group (scaffold or chromosome) for annotation, and the text-box is used to manually enter its coordinates. B. The ‘User-created Annotations’ panel contains the manual annotations. C. The ‘Evidence’ panel contains the evidence tracks. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. 
 
 
 The ‘Navigation Panel’ at the top of the window (Fig 1. A) houses controls for localization within a chromosome or scaffold, controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
@@ -205,9 +206,11 @@ In some cases all the data may disagree with the annotation, in other cases some
 
 Zoomed to base level
 
+<center>
 <img src="/images/Web_Apollo-User_Guide_Fig2.jpg" width="300" height="210">
-
-Figure 2. Apollo View zoomed to base level. The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The ‘User-created Annotation’ track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the ‘Stop’ signal.
+<br>
+<b>Figure 2.</b> Apollo View zoomed to base level. The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The ‘User-created Annotation’ track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the ‘Stop’ signal.
+</center>
 
 ### Splice Sites
 
@@ -239,9 +242,12 @@ If the annotation looks good, obtain the protein sequence (see section 4.3.1) an
 ## Additional Functionality
 
 
+<center>
 <img src="/images/Web_Apollo_User_Guide_Fig3.png" width="150" height="335">
+<br>
+<b>Figure 3.</b> Additional functionality.This is the right-click menu.
+</center>
 
-Figure 3. Additional functionality.This is the right-click menu.
 
 ### Get Sequences
 
@@ -287,9 +293,12 @@ You may select the supporting evidence tracks and drag their ‘ghost’ over th
 
 Alternatively, you may select and drag each proposed gene model separately onto the ‘User-created Annotations’ area. Once you are certain that two models should be merged, after checking boundaries and all supporting evidence, bring them together by holding the ‘Shift’ key and clicking on an intron from each of the merging gene models; in this way you will select both models completely. Then select the ‘Merge’ option from the right-click menu. Get the resulting translation sequence and inspect it by querying a protein database, such as UniProt. Be sure to record the IDs of all starting gene models in the ‘Comments’ table, and use the appropriate canned comment to indicate that this annotation is the result of a merge.
 
+<center>
+<img src="/images/Web_Apollo_User_Guide_edge-matching.png" width="700" height="407">
+<br>
+<b>Figure 4.</b> Edge-matching in Apollo. When a feature is selected, the exon edges are marked with a red box. All other features that share the same exon boundaries are marked with a red line on the matching edge. This feature allows annotators to confirm that evidence is in agreement without examining each exon at the base level.
+</center>
 
-<img src="/images/Web_Apollo_User_Guide_Fig3.png" width="150" height="335">
-Figure 4. Edge-matching in Apollo. When a feature is selected, the exon edges are marked with a red box. All other features that share the same exon boundaries are marked with a red line on the matching edge. This feature allows annotators to confirm that evidence is in agreement without examining each exon at the base level.
 
 ### Merge Two Gene Predictions from Different Scaffolds
 
@@ -369,7 +378,11 @@ Data from each of the evidence and prediction tracks can also be exported. GFF3 
 
 # Additional Information About Apollo
 
-Apollo is an open-source project and is under active development. If you have any questions, you may contact the Apollo development team at apollo-dev [at] lists [dot] lbl [dot] gov, or join the conversation on the Apollo mailing list by filling out this form. More details about Apollo installation, requirements, and configuration can be found http://webapollo.readthedocs.org/en/latest/. The Apollo demo is located at http://genomearchitect.org/WebApolloDemo. Apollo is a member of the GMOD project.
+Apollo is an open-source project and is under active development.
+If you have any questions, you may [contact the Apollo development team](mailto:apollo-dev@lists.lbl.gov) or join the conversation on the Apollo mailing list by filling out this form. 
+We provide [additional documentation for installation and setup](http://genomearchitect.readthedocs.org/en/latest/).
+[Our demo page](../public-demo/) provides information on connecting to our demonstration site.
+Apollo is a member of the [GMOD project](http://gmod.org).
 
 
 
