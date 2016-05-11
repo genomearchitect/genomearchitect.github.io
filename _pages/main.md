@@ -17,7 +17,7 @@ There are no installation requirements for Annotators!
 
 Apollo is a plug-in for [JBrowse](http://jbrowse.org), adding User-created Annotations and DNA tracks to the familiar main window.
 
-Try Apollo at our [Public Demo](public-demo), built with the genome of several organism including the honey bee (Apis mellifera).
+Try Apollo at our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).
 
 ### Highlighted features
 
@@ -39,7 +39,7 @@ Try Apollo at our [Public Demo](public-demo), built with the genome of several o
 
 ### Documentation
 
-* [User guide](apollo-users-guide)
+* [User guide](users-guide)
 * [Installation and configuration guide](http://genomearchitect.readthedocs.org/en/latest/)
 * [Roadmap in github milestones](https://github.com/GMOD/Apollo/milestones)
 * [Instructions on Apollo Web API, and Tutorial at GMOD Summer School](documentation)
