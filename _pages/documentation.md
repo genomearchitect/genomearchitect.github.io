@@ -1,6 +1,6 @@
 ---
 title: Documentation
-permalink: documentation
+permalink: /documentation/
 ---
 
 Access the installation and user guides, as well as instructions on Apollo Web API and the Apollo Tutorial at the GMOD Summer School.

@@ -1,7 +1,7 @@
 ---
 title: Desktop Apollo
 type: page
-permalink: older-apollo
+permalink: /older-apollo/
 
 ---
 

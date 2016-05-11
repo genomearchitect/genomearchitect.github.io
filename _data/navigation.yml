@@ -12,9 +12,8 @@ main:
   - title: "Guide"
     url: /users-guide/
 
-  - title: "Archive"
-    url: /older-apollo/
-
-  - title: "About"
+  - title: "About Us"
     url: /about/
 
+  - title: "Archive"
+    url: /older-apollo/
