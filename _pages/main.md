@@ -5,7 +5,7 @@ permalink: /
 logo: 300px-ApolloLogo.png
 ---
 
-{% include base_path %}
+<!--{% include base_path %}-->
 
 <!--# Apollo-->
 

@@ -1,5 +1,5 @@
 ---
-title: Using Apollo
+title: Documentation
 permalink: documentation
 ---
 
