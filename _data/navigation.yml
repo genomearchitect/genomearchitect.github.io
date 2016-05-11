@@ -1,16 +1,23 @@
 # main links links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#  - title: "Main"
+#    url: /main/
+
+  - title: "Demo"
+    url: /demo/
+
+  - title: "Documentation"
+    url: /documentation/
+
+  - title: "Guide"
+    url: /users-guide/
+
+  - title: "Archive"
+    url: /older-apollo/
+
+  - title: "Downloads"
+    url: /older-apollo/
 
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
+    url: /about/
 
-  - title: "Sample Posts"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
-
-  - title: "Sample Pages"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
-
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
