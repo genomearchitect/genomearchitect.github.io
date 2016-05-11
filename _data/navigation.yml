@@ -10,7 +10,8 @@ main:
     url: /documentation/
 
   - title: "Guide"
-    url: /users-guide/
+#    url: /users-guide/
+    url: /apollo-users-guide/
 
   - title: "About Us"
     url: /about/
