@@ -1,15 +1,19 @@
 ---
 title: Apollo
-type: archive
+type: single
 permalink: /
-logo: 300px-ApolloLogo.png
+#header:
+#   image: ApolloLogo.png
+#   width: 300
+#   height: 100
 ---
 
 <!--{% include base_path %}-->
 
-<!--# Apollo-->
 
-### First instantaneous, collaborative genomic annotation editor available on the Web.
+<!-- <img src="../images/ApolloLogo_100x36.png">  -->
+
+### First instantaneous, collaborative genomic annotation editor available on the Web. 
 
 Apollo is designed to support geographically dispersed researchers, and the work of a distributed community is coordinated through automatic synchronization: all edits in one client are instantly pushed to all other clients, allowing users to see annotation updates from collaborators in real-time during the editing process.
 
