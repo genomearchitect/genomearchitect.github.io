@@ -4,7 +4,7 @@ This should be viewed on http://genomearchitect.github.io
 
 This repo is only for maintainers
 
-## How-To (for Apollo / bebop members)
+## How-To (for Apollo / BBOP members)
 
 <!--Edit the menu: see _data/sidebar_doc.yml-->
 
