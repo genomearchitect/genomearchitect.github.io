@@ -37,7 +37,7 @@ Try Apollo at our [Public Demo](demo), built with the genome of several organism
 
 * [Download Apollo](https://github.com/GMOD/Apollo/releases/latest)
 * [Our code on Github](https://github.com/GMOD/Apollo)
-* [Looking for Desktop Apollo?](old-apollo)
+* [Looking for Desktop Apollo?](https://genomearchitect.github.io/older-apollo/)
 * An older version of Apollo may also be installed using "[GMOD in a box](http://gmod.org/wiki/Box)" and "[GMOD in the Cloud](http://gmod.org/wiki/Box)"
 
 
