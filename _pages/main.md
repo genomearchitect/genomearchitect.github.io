@@ -50,7 +50,7 @@ Try Apollo at our [Public Demo](demo), built with the genome of several organism
 ### Collaborations
 * [The JBrowse Genome Browser](http://jbrowse.org)
 * [The Generic Model Organism Database (GMOD)](http://gmod.org)
-* [Our Team](about-us)
+* [Our Team](about)
 
 
 ---
