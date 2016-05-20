@@ -10,12 +10,12 @@ locale                   : "en-US"
 #title                    : "Genome Architect"
 title                    : "Apollo"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Genome Architect"
+description              : "Documentation for the Apollo web-based manual biocuration tool."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : ApolloLogo.png # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:

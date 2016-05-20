@@ -1,15 +1,19 @@
 ---
 title: Apollo
-type: archive
+type: single
 permalink: /
-logo: 300px-ApolloLogo.png
+#header:
+#   image: ApolloLogo.png
+#   width: 300
+#   height: 100
 ---
 
 <!--{% include base_path %}-->
 
-<!--# Apollo-->
 
-### First instantaneous, collaborative genomic annotation editor available on the Web.
+<!-- <img src="../images/ApolloLogo_100x36.png">  -->
+
+### First instantaneous, collaborative genomic annotation editor available on the Web. 
 
 Apollo is designed to support geographically dispersed researchers, and the work of a distributed community is coordinated through automatic synchronization: all edits in one client are instantly pushed to all other clients, allowing users to see annotation updates from collaborators in real-time during the editing process.
 
@@ -17,7 +21,7 @@ There are no installation requirements for Annotators!
 
 Apollo is a plug-in for [JBrowse](http://jbrowse.org), adding User-created Annotations and DNA tracks to the familiar main window.
 
-Try Apollo at our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).
+Try Apollo at our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  [Download the lastest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to [get started](http://genomearchitect.readthedocs.io/en/stable/).
 
 ### Highlighted features
 
@@ -33,8 +37,8 @@ Try Apollo at our [Public Demo](demo), built with the genome of several organism
 
 * [Download Apollo](https://github.com/GMOD/Apollo/releases/latest)
 * [Our code on Github](https://github.com/GMOD/Apollo)
-* [Looking for Desktop Apollo?](old-apollo)
-* An older version of Apollo may also be installed using "[GMOD in a box](http://gmod.org/wiki/Box)" and "[GMOD in the Cloud](http://gmod.org/wiki/Box)"
+* [Looking for Desktop Apollo?](https://genomearchitect.github.io/older-apollo/)
+* An older version of Apollo may also be installed using "[GMOD in a box](http://gmod.org/wiki/Box)" and "[GMOD in the Cloud](http://gmod.org/wiki/Cloud)"
 
 
 ### Documentation

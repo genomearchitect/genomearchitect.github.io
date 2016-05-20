@@ -17,62 +17,60 @@ All the functionality you came to expect from the desktop version of Apollo and 
 
 
 
-<center>
 <h2>
 <a href="http://genomearchitect.github.io">Current Apollo Website &rarr;</a>
 </h2>
 <h3 align="center"><font color="red">Please be aware that we are no longer developing the desktop version of Apollo and that support for its use has been discontinued.</font></h3>
 <br>
 <h4>Version 1.11.8 (February, 2013)</h4>
-</center>
-<center>
+
+
 <font size="3"><b>Available Installers</b></font><br>
 <table border="1" cellpadding="3" cellspacing="10">
 <tr>
-<td></td>
-<td></td>
+<td>&nbsp;</td>
 <td><b>Platform</b></td>
 <td><b>includes Java VM</b></td>
 <td><b>without Java VM</b></td>
 <td><b>Instructions</b></td>
 </tr>
 <tr>
-<td><center><img src="/images/win.gif" width="26" height="16" alt="Windows" /></center></td>
+<td><img src="/images/win.gif" width="26" height="16" alt="Windows" /></td>
 <td>Windows</td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_windows_with_jre.exe">Download</a></center></td>
-<td><centpermalink: er><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_windows.exe">Download</a></center></td>
-<td><center><a href="#windows">View</a></center></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_windows_with_jre.exe">Download</a></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_windows.exe">Download</a></td>
+<td><a href="#windows">View</a></td>
 </tr>
 <tr>
-<td><center><img src="/images/macosx.gif" width="26" height="16" alt="MacOS X" /></center></td>
+<td><img src="/images/macosx.gif" width="26" height="16" alt="MacOS X" /></td>
 <td>Mac OS X</td>
 <td></td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_macos.dmg">Download</a></center></td>
-<td><center><a href="#macosx">View</a></center></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_macos.dmg">Download</a></td>
+<td><a href="#macosx">View</a></td>
 </tr>
 <tr>
-<td><center><img src="/images/linux.gif" width="14" height="16" alt="Linux" /></center></td>
+<td><img src="/images/linux.gif" width="14" height="16" alt="Linux" /></td>
 <td>Linux</td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_linux_with_jre.sh">Download</a></center></td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></center></td>
-<td><center><a href="#linux">View</a></center></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_linux_with_jre.sh">Download</a></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></td>
+<td><a href="#linux">View</a></td>
 </tr>
 <tr>
-<td><center><img src="/images/solaris.gif" width="26" height="16" alt="Solaris" /></center></td>
+<td><img src="/images/solaris.gif" width="26" height="16" alt="Solaris" /></td>
 <td>Solaris</td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_solaris_with_jre.sh">Download</a></center></td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></center></td>
-<td><center><a href="#solaris">View</a></center></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_solaris_with_jre.sh">Download</a></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></td>
+<td><a href="#solaris">View</a></td>
 </tr>
 <tr>
-<td><center><img src="/images/unix.gif" width="26" height="16" alt="Unix" /></center></td>
+<td><img src="/images/unix.gif" width="26" height="16" alt="Unix" /></td>
 <td>Any Unix Platform</td>
 <td></td>
-<td><center><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></center></td>
-<td><center><a href="#unix">View</a></center></td>
+<td><a href="http://icebox.lbl.gov/apollo/legacy/installers/Apollo_unix.sh">Download</a></td>
+<td><a href="#unix">View</a></td>
 </tr>
 </table>
-</center>
+
 <br>
 <hr>
 <br>
