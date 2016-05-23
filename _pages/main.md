@@ -15,16 +15,17 @@ permalink: /
 
 ### First instantaneous, collaborative genomic annotation editor available on the Web. 
 
-Apollo is designed to support geographically dispersed researchers, and the work of a distributed community is coordinated through automatic synchronization: all edits in one client are instantly pushed to all other clients, allowing users to see annotation updates from collaborators in real-time during the editing process.
+Apollo is designed to support geographically dispersed researchers, and the work of a distributed community is coordinated through automatic synchronization: all edits in one client are instantly pushed to all other clients, allowing users to see annotation updates from collaborators in real-time during the editing process.  There are no installation requirements for Annotators!
 
-There are no installation requirements for Annotators!
+---
 
-Apollo is a plug-in for [JBrowse](http://jbrowse.org), adding User-created Annotations and DNA tracks to the familiar main window.
+Try Apollo on our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  
 
-Try Apollo at our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  [Download the lastest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to [get started](http://genomearchitect.readthedocs.io/en/stable/).
+[Download the lastest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to [get started](http://genomearchitect.readthedocs.io/en/stable/).
 
 ### Highlighted features
 
+* Apollo is a plug-in for the [JBrowse](http://jbrowse.org) Genome Viewer.
 * In addition to genes and pseudogenes, users can annotate ncRNAs (snRNA, snoRNA, tRNA, rRNA), miRNAs, repeat regions, and transposable elements; each annotation type has its own configuration of the 'Information Editor'.
 * History tracking with undo/redo functions is available.
 * Users are able to directly set an annotation to a specific state, choosing from the 'History' display.
