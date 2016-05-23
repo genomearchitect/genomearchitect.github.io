@@ -3,8 +3,8 @@ title: Public Demo
 permalink: /demo/
 ---
 
-### DISCLAIMER
 
+{: .notice--warning}
 This Apollo demo is continuously in development and it may change at any time. This is a public demo, which grants anyone access to read and modify the data; this means that data might change at any point, even while you are perusing the demo, if someone else concurrently modifies the same annotation. There is no privacy with these data.
 
 ### INSTRUCTIONS
@@ -24,4 +24,3 @@ If you are new to Apollo, we recommend that you read through our [User Guide](..
 Please Note: We have not tested the current version of Apollo on Internet Explorer. If you are not able to use Apollo on IE, you will need to use a different browser such as [Firefox](http://www.mozilla.org/en-US/firefox/new) or [Google Chrome](https://www.google.com/chrome) (both available free of cost).
 
 Happy Annotating!
-

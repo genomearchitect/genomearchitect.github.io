@@ -29,3 +29,4 @@ gem install jekyll
 
 It is based on [the minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/)
 
+Additional options are [documented here](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/).

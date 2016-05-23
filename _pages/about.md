@@ -17,4 +17,5 @@ Members Emeriti: Gregg Helt ([Genomancer Consulting](http://www.genomancer.org/)
    and Nomi Harris ([LBNL](http://www.lbl.gov/)).
 
 
+{: .notice--info}
 {% include contact.md %}
