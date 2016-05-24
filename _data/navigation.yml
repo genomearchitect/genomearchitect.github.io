@@ -16,5 +16,8 @@ main:
   - title: "About Us"
     url: /about/
 
+  - title: "Community"
+    url: /communityservers/
+
   - title: "Archive"
     url: /older-apollo/
