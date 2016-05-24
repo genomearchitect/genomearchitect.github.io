@@ -1,6 +1,7 @@
 ---
 title: Public Demo
 permalink: /demo/
+permalink: /webapollodemo/
 ---
 
 
