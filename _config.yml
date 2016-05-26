@@ -14,7 +14,7 @@ name                     : "Genome Architect"
 description              : "Documentation for the Apollo web-based manual biocuration tool."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  :
+gh_repo                  : "https://github.com/genomearchitect/genomearchitect.github.io/"
 teaser                   : ApolloLogo.png # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -29,7 +29,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 
 # SEO Related
-google_site_verification :
+google_site_verification : "UA-62921593-1"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -53,7 +53,7 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-62921593-1"
 
 # Google AdSense
 google_ad_client         :
