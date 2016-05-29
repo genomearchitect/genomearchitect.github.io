@@ -1,7 +1,8 @@
 ---
 title: Public Demo
-permalink: /demo/
-permalink: /webapollodemo/
+permalinks: 
+  - /demo/
+  - /webapollodemo/
 ---
 
 
