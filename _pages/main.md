@@ -15,7 +15,7 @@ Apollo is designed to support geographically dispersed researchers, and the work
 Try Apollo on our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  
 
 {: .notice--info}
-[Download the latest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to [get started](http://genomearchitect.readthedocs.io/en/stable/).
+[Download the latest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to get started.  Documentation for the Apollo software is also avaible via [read the docs](http://genomearchitect.readthedocs.io/en/stable/).
 
 {: .notice--info}
 {% include contact.md %}
