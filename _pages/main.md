@@ -47,7 +47,6 @@ Try Apollo on our [Public Demo](demo), built with the genome of several organism
 * [Instructions on Apollo Web API, and Tutorial at GMOD Summer School](documentation)
 * [Report issues on Github](https://github.com/GMOD/Apollo/issues)
 * {% include contact.md %}
-* Alternative [gmane](http://blog.gmane.org/gmane.science.biology.gmod.apollo) and [nabble](http://gmod.827538.n3.nabble.com/Apollo-f815553.html) archive interface for the Apollo mailing list for posting and searching archives.
 
 ### Collaborations
 * [The JBrowse Genome Browser](http://jbrowse.org)
