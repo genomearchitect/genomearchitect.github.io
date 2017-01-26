@@ -61,7 +61,9 @@ Apollo is supported by the National Institutes of Health grant [5R01GM080203](ht
  from the National Human Genome Research Institute, and by the Director, Office of Science, Office of Basic Energy Sciences,
   of the U.S. Department of Energy under Contract No. [DE-AC02-05CH11231](http://www.ucop.edu/laboratory-management/contracts/lbnl/index.html).
 
-Please cite the use of Apollo as: Lee E, Helt GA, Reese JT, Munoz-Torres MC, Childers CP, Buels RM, Stein L, Holmes IH, Elsik CG, Lewis SE. 2013. Apollo: a web-based genomic annotation editing platform. [Genome Biol 14:R93](http://genomebiology.com/2013/14/8/R93/abstract).
+Please cite the use of Apollo 2 as: Dunn NA, Munoz-Torres MC, Unni D, Yao E, Rasche E, Holmes IH, Elsik CG; Lewis SE. 2016.  Apollo:  A Tool for Collaborative Manual Genome Annotation. [![https://doi.org/10.5281/zenodo.198778](https://zenodo.org/badge/DOI/10.5281/zenodo.198778.svg)](https://doi.org/10.5281/zenodo.198778)
+
+Please cite the use of Apollo 1 or 2 as: Lee E, Helt GA, Reese JT, Munoz-Torres MC, Childers CP, Buels RM, Stein L, Holmes IH, Elsik CG, Lewis SE. 2013. Apollo: a web-based genomic annotation editing platform. [Genome Biol 14:R93](http://genomebiology.com/2013/14/8/R93/abstract). 
 
 <small>Image credits: Bee CopyRight of www.AlexanderWild.com | DNA image ShutterStock.com</small>
 
