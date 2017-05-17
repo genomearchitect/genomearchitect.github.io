@@ -5,7 +5,7 @@ permalink: /documentation/
 
 Access the installation and user guides, as well as instructions on Apollo Web API and the Apollo Tutorial at the GMOD Summer School.
 
-* [Apollo User Guide](../users-guide)
+* [Apollo User Guide](http://genomearchitect.org/users-guide)
 * [Server Installation Guide for WA2.0.x(JB1.11.x) Versions](http://genomearchitect.readthedocs.io/en/stable/)
 * Older versions:
     * [Server Installation Guide for WA1.0.x(JB1.11.x) Versions](http://genomearchitect.readthedocs.io/en/1.0.4/)
