@@ -3,6 +3,7 @@ title: Public Demo
 permalink: /demo/
 ---
 
+<h2 style="color:red;">Our Demonstration server is momentarily down and under maintenance</h2>
 
 {: .notice--warning}
 This Apollo demo is continuously in development and it may change at any time. This is a public demo, which grants anyone access to read and modify the data; this means that data might change at any point, even while you are perusing the demo, if someone else concurrently modifies the same annotation. There is no privacy with these data.
