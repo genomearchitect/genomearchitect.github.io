@@ -119,7 +119,7 @@ The Apollo Demo was built with the genome of the honey bee (Apis mellifera).
 
 ## Log in
 
-To begin annotating a gene, login to the Apollo Demo
+To begin annotating a gene, login to the [Apollo Demo](http://genomearchitect.org/demo/)
 
 You may choose to go to the ‘Reference Sequence selection’ screen, the main entry point for Apollo. This page allows users to view the available reference sequences and perform bulk operations on those sequences (e.g. exporting data). Alternatively you may jump directly into edit mode.
 
