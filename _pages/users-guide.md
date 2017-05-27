@@ -16,7 +16,7 @@ This guide allows users to:
 1. This list will contain the toc (it doesn't matter what you write here)
 {:toc}
 
-# I. GENERAL INFORMATION
+# GENERAL INFORMATION
 
 ## General Process of Manual Annotation
 
@@ -30,7 +30,7 @@ The major steps of manual annotation using Apollo can be summarized as follows:
 
 When annotating gene models using Apollo, remember that you are looking at a ‘frozen’ version of the genome assembly. This means that you will not be able to modify the assembled genome sequence itself, but you will be able to instruct Apollo to take into account modifications to the reference sequence and calculate their consequences. For instance, for any given protein coding gene, Apollo is able to predict the consequences that deleting a string of nucleotide residues will have on the coding sequence.   
 
-# II. NAVIGATION
+# NAVIGATION
         
 ## Initial reconnaissance and adjustments.
 
@@ -71,18 +71,16 @@ The following are ptions for Users with Administrative Privileges
 * All available organisms, as well as statistics on the number of annotations and reference sequences per organism, will be isted here in tabular format. The bottom of the panel displays details about each selected organism.  
 
 ##### Users Tab: 
+* A list of users is available here in tabular format. Use the 'Search' box to find a user of interest, and the '+ Create User' button for new entries. 
+* Click on a user from the list to reveal details about the user, the groups the user is linked to, and the organisms the user has access to. 
 
-### Select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
-
-### Search for a specific sequence
-
-If you do not know the scaffold ID and have the sequence of a transcript or protein homolog related to your gene of interest, you might use the ‘Search Sequence’ feature to run a BLAT (BLAST-Like Alignment Tool) search. Querying the assembled genome using BLAT will determine the existence of a gene model prediction that is putatively homologous to your gene of interest. Click the ‘Tools’ item on the Apollo menu bar, and select ‘Sequence Search’ from the dropdown choices. Choose to run a Protein or Nucleotide BLAT search from the drop down menu as appropriate, and paste the string of residues to be used as query. Check the box labeled ‘Search all genomic sequences’ to search the entire genome.
-
-The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about ‘Highlights’ in section 3.2.
-
-A word on Blat:
-
-Blat of DNA is designed to quickly find sequences of 95% and greater similarity of length 40 bases or more, and it may miss more divergent or shorter sequence alignments. On protein, BLAT finds sequences of 80% and greater similarity to the query of length 20+ amino acids. Higher speed at the price of lesser homology depth make Blat a commonly used tool to look up the location of a sequence in the genome or determine the exon structure of an mRNA. Learn more about Blat here.
+##### Groups Tab: 
+* Use this tab to manage groups in your Apollo instances. One or more users can be part of one or more groups. 
+* The 'Groups' tab offers the ability to organize your users into groups that may also have different permissions from other users.
+ 
+##### Admin Tab: 
+* This tab allows users with administrative privileges to customize 'Canned Elements' according to the [Apollo Guidelines for 'Canned Elements'](http://genomearchitect.readthedocs.io/en/latest/Configure.html#canned-elements). 
+* Administrators may also make a number of other changes and generate reports as described in the [Apollo Configuration Guidelines](http://genomearchitect.readthedocs.io/en/latest/Configure.html).
 
 ## The Apollo Main Window
 
@@ -110,11 +108,23 @@ The light yellow track at the top of the working area is the ‘User-created Ann
 A list of ‘Available Tracks’ is available on the left, and it is possible to filter the tracks displayed in this list by typing on the ‘filter by text’ white box above the track list. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label includes a drop-down menu with options to 1) retrieve information ‘About this track’; 2) an option to ‘Pin to top’ that leaves the track displayed at the top of the screen and below the ‘User-created Annotations’ track as users scroll down to inspect other data; 3) the ‘Edit config’ option to bring up an editing window and modify the JSON file to configure the track’s display; and options to 4) ‘Delete’ the track or 5) ‘Save track data’ into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the JBrowse Configuration Guide at http://www.gmod.org/wiki/JBrowse_Configuration_Guide.
 
 
-<h2>III. ANNOTATION</h2>
+# ANNOTATION
 
 Apollo allows annotators to modify and refine the precise location and structure of the genome elements that predictive algorithms cannot yet resolve automatically. Using Apollo annotators may corroborate or modify the structures of coding genes, pseudogenes, repeat regions, transposable elements, and non-coding RNAs (i.e: snRNA, snoRNA, rRNA, tRNA, and miRNA).
 
-# Annotating a gene
+## Annotating a gene
+
+Update Intro.
+
+### Select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
+
+### Search for a specific sequence
+
+If you do not know the scaffold ID and have the sequence of a transcript or protein homolog related to your gene of interest, you might use the ‘Search Sequence’ feature to run a BLAT (BLAST-Like Alignment Tool) search. Querying the assembled genome using BLAT will determine the existence of a gene model prediction that is putatively homologous to your gene of interest. Click the ‘Tools’ item on the Apollo menu bar, and select ‘Sequence Search’ from the dropdown choices. Choose to run a Protein or Nucleotide BLAT search from the drop down menu as appropriate, and paste the string of residues to be used as query. Check the box labeled ‘Search all genomic sequences’ to search the entire genome.
+
+The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about ‘Highlights’ in section 3.2.
+
+* A word on Blat: Blat of DNA is designed to quickly find sequences of 95% and greater similarity of length 40 bases or more, and it may miss more divergent or shorter sequence alignments. On protein, BLAT finds sequences of 80% and greater similarity to the query of length 20+ amino acids. Higher speed at the price of lesser homology depth make Blat a commonly used tool to look up the location of a sequence in the genome or determine the exon structure of an mRNA. Learn more about Blat here.
 
 ## Initiating an annotation
 
