@@ -4,11 +4,11 @@ type: single
 permalink: /markdown-users-guide/
 ---
 
-## This guide allows users to:
+This guide allows users to:
 
-* Become familiar with the environment of the Apollo annotation tool
+* Become familiar with the environment of the Apollo annotation tool.
 * Understand Apollo’s functionality for the process of manual annotation.
-* Learn to corroborate and modify computationally predicted gene models using all available gene predictions and biological evidence using Apollo.
+* Learn to corroborate and modify computationally predicted gene models using all available gene predictions and biological evidence available in Apollo.
 
 --- 
 
@@ -36,9 +36,7 @@ When annotating gene models using Apollo, remember that you are looking at a ‘
 
 ### Login
 
-To begin annotating a gene, login to the [Apollo Demo](http://genomearchitect.org/demo/)
-
-When prompted, use the following credentials:
+To begin annotating a gene, visit the [Apollo Demo](http://genomearchitect.org/demo/). When prompted, use the following credentials:
 
 Username: demo[at]demo[dot]com             Password: demo
 
@@ -57,15 +55,24 @@ At the top of the panel, a drop down menu allows users to switch between Apollo 
 * To find an annotation enter the name in the 'Annotation Name' box, or type its location in the 'Reference Sequence' box. Drop-down menus located to the right of these boxes allow you to filter the content to be displayed. Click on the 'Go to Annotation' blue box to navigate to that location in the browser.
 * You may easily navigate to any annotation listed in the table. One click will select the annotation of interest and reveal a 'Details' section at the bottom of the panel. Double-click or use the arrowhead to the right of the annotation to expand the entry and reveal more details about each genomic element. Click once on the expanded entry in green letters to reveal a 'Code' tab at the bottom of the Annotator Panel, and click the blue button with an arrow inside a circle to navigate to that annotation in the browser.      
 
-#### Tracks Tab:
+##### Tracks Tab:
 * You may reveal or hide any of the data tracks listed in tabular form by ticking the corresponding boxes under the word 'Show', to the left of the panel. Use the 'Search' box at the top of the 'Tracks' tab to filter the list of tracks, and reveal or hide the 'JBrowse Track Selector' using the button to the right of the 'Search' box.
 
-#### Ref Sequence Tab:
+##### Ref Sequence Tab:
+* This tab includes a list of all available fragments of the assembled genome, e.g. scaffolds, chromosomes, etc., displayed in tabulated format. Use this tab to select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
+* You may double-click on any of the listed 'Reference Sequences' to navigate directly to it, or use the 'Search' box at the top to locate a 'Reference Sequence' of interest. 
+* The 'Minimum' and 'Maximum' boxes in front of the word 'Length' allows users to filter the list of 'Ref Sequences'. 
+* The 'Export' section allows users to download all annotations from one or many 'Ref Sequences' in GFF3, FASTA, formats. For instance, select the preferred entry by clicking once on it from the list, then choose the format you wish to download, and lastly, click on the download icon to save the file in your computer. You may choose one or a few 'Ref Sequences' at a time using the download function with the word 'Selected (#)', or you may download all annotations from all 'Ref Sequences' using the download button with the word 'All' in it.      
+* You may also navigate through the listed 'Ref Sequences' using the arrows located immediately above the list.  
 
-### Select the Scaffold, Chromosome or Group to Begin your Work
+The following are ptions for Users with Administrative Privileges
 
-If you know the identifier of the scaffold (or chromosome, or group; henceforth referred to as ‘scaffolds’) you wish to work on, find it under the ‘Name’ list. Scaffolds will be listed in groups of 10, 25, 50 or 100 entries. You may scroll through the options on the upper left drop-down menu to select your preference and facilitate your search. The ‘Filter’ box on the upper right allows users to find their scaffold of interest by entering letters and or numbers from its identifier. The filter search is not case-sensitive. Once you find the desired scaffold, click on its highlighted name and the Apollo Main Window will open in a new browser tab.
+##### Organism Tab: 
+* All available organisms, as well as statistics on the number of annotations and reference sequences per organism, will be isted here in tabular format. The bottom of the panel displays details about each selected organism.  
 
+##### Users Tab: 
+
+### Select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
 
 ### Search for a specific sequence
 
