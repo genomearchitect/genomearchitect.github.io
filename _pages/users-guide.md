@@ -4,7 +4,7 @@ type: single
 permalink: /markdown-users-guide/
 ---
 
-<h2>This guide allows users to:</h2>
+## This guide allows users to:
 
 * Become familiar with the environment of the Apollo annotation tool
 * Understand Apollo’s functionality for the process of manual annotation.
@@ -12,121 +12,55 @@ permalink: /markdown-users-guide/
 
 --- 
 
-<h2>Table of Contents</h2>
+## Table of Contents
 1. This list will contain the toc (it doesn't matter what you write here)
 {:toc}
 
-<h2>I. GENERAL INFORMATION</h2>
+# I. GENERAL INFORMATION
 
-# General Process of Manual Annotation
+## General Process of Manual Annotation
 
-The major steps of manual annotation using Apollo can be sumarized as follows:
+The major steps of manual annotation using Apollo can be summarized as follows:
 
-* locate a chromosomal region of interest
-* determine whether a feature in an existing evidence track provides a reasonable gene model to start annotating
-* drag the selected feature to the ‘User Annotation’area, creating an initial gene model
-* use editing functions to edit the gene model if necessary
-* check your edited gene model for consistency with existing homologs by exporting the fasta formatted sequence and searching a protein sequence database, such as UniProt or the NCBI Non Redundant (NR) database, and
-* conducting preliminary functional assignments using the Gene Ontology (GO) database.
+* Locate a chromosomal region of interest.
+* Determine whether a feature in an existing evidence track provides a reasonable gene model to start annotating.
+* Drag the selected feature to the ‘User Annotation’area, creating an initial gene model.
+* Use editing functions to edit the gene model if necessary.
+* Check your edited gene model for consistency with existing homologs by exporting the FASTA formatted sequence and searching a protein sequence database, such as UniProt or the NCBI Non Redundant (NR) database, and by conducting preliminary functional assignments using the Gene Ontology (GO) database.
 
-When annotating gene models using Apollo, remember that you are looking at a ‘frozen’ version of the genome assembly, and this means you will not be able to modify the assembled genome sequence itself.
+When annotating gene models using Apollo, remember that you are looking at a ‘frozen’ version of the genome assembly. This means that you will not be able to modify the assembled genome sequence itself, but you will be able to instruct Apollo to take into account modifications to the reference sequence and calculate their consequences. For instance, for any given protein coding gene, Apollo is able to predict the consequences that deleting a string of nucleotide residues will have on the coding sequence.   
 
-
-# Evidence Provided in the Public Demo
-
-The Apollo Demo was built with the genome of the honey bee (Apis mellifera).
-
-## Evidence in support of protein coding gene models
-
-### Consensus Gene Sets:
-
-* Official Gene Set v3.2
-* Official Gene Set v1.0
-
-### Consensus Gene Sets comparison:
-
-* OGSv3.2 genes that merge OGSv1.0 genes
-* OGSv3.2 genes that merge RefSeq genes
-* OGSv3.2 genes that split OGSv1.0 genes
-* OGSv3.2 genes that split RefSeq genes
-
-### Protein Coding Gene Predictions Supported by Biological Evidence:
-
-* NCBI Gnomon
-* Fgenesh++ with RNASeq training data
-* Fgenesh++ without RNASeq training data
-* NCBI RefSeq Protein Coding Genes
-* NCBI RefSeq Low Quality Protein Coding Genes
-
-### Ab initio protein coding gene predictions:
-
-* Augustus Set 12
-* Augustus Set 9
-* Fgenesh
-* GeneID
-* N-SCAN
-* SGP2
-
-### Transcript Sequence Alignment:
-
-* NCBI ESTs
-* Apis cerana reads (RNA-Seq)
-* Forager Bee Brain Illumina Contigs
-* Nurse Bee Brain Illumina Contigs
-* Forager RNA-Seq reads
-* Nurse RNA-Seq reads
-* Abdomen 454 Contigs
-* Brain and Ovary 454 Contigs
-* Embryo 454 Contigs
-* Larvae 454 Contigs
-* Mixed Antennae 454 Contigs
-* Ovary 454 Contigs
-* Testes 454 Contigs
-* Forager RNA-Seq HeatMap
-* Forager RNA-Seq XY Plot
-* Nurse RNA-Seq HeatMap
-* Nurse RNA-Seq XY Plot
-
-### Protein homolog alignment:
-
-* Acep_OGSv1.2
-* Aech_OGSv3.8
-* Cflo_OGSv3.3
-* Dmel_r5.42
-* Hsal_OGSv3.3
-* Lhum_OGSv1.2
-* Nvit_OGSv1.2
-* Nvit_OGSv2.0
-* Pbar_OGSv1.2
-* Sinv_OGSv2.2.3
-* Znev_OGSv2.1
-* Metazoa_Swissprot
-
-## Evidence in support of non protein coding gene models
-
-### Non-protein coding gene predictions:
-
-* NCBI RefSeq Noncoding RNA
-* NCBI RefSeq miRNA
-
-### Pseudogene predictions:
-
-* NCBI RefSeq Pseudogene
-
-<h2>II. NAVIGATION</h2>
+# II. NAVIGATION
         
-# Initial reconnaissance and adjustments.
+## Initial reconnaissance and adjustments.
 
-## Log in
+### Login
 
 To begin annotating a gene, login to the [Apollo Demo](http://genomearchitect.org/demo/)
 
-You may choose to go to the ‘Reference Sequence selection’ screen, the main entry point for Apollo. This page allows users to view the available reference sequences and perform bulk operations on those sequences (e.g. exporting data). Alternatively you may jump directly into edit mode.
+When prompted, use the following credentials:
 
-If prompted, use the following credentials:
+Username: demo[at]demo[dot]com             Password: demo
 
-Username | Password:           demo | demo
+Users may choose to browse the genomes of publicly available organisms, by clicking on the option at the bottom of the Login box. 
 
+### The Annotation Window and the Annotator Panel 
+ 
+Upon login, you will see the Apollo Annotation Window on the left and the Annotator Panel on the right. The Annotator Panel can be removed by using the arrow head icon (it also looks like a 'greater than' sign) at the top of the bar dividing the Panel from the rest of the main Apollo Window.
+
+#### Annotator Panel
+
+At the top of the panel, a drop down menu allows users to switch between Apollo instances for available organisms. The box located to the right of the drop down menu allows users to  A series of tabs in the Annotator Panel allow users to easily navigate to different regions of the genome, switch between organisms, or easily locate an annotation. It also allows administrators to edit a a number of features and generate reports. Below is a description of functionality in each tab. 
+
+##### Annotations Tab: 
+* A list of manual annotations from the team of curators is available in a tabular format. 
+* To find an annotation enter the name in the 'Annotation Name' box, or type its location in the 'Reference Sequence' box. Drop-down menus located to the right of these boxes allow you to filter the content to be displayed. Click on the 'Go to Annotation' blue box to navigate to that location in the browser.
+* You may easily navigate to any annotation listed in the table. One click will select the annotation of interest and reveal a 'Details' section at the bottom of the panel. Double-click or use the arrowhead to the right of the annotation to expand the entry and reveal more details about each genomic element. Click once on the expanded entry in green letters to reveal a 'Code' tab at the bottom of the Annotator Panel, and click the blue button with an arrow inside a circle to navigate to that annotation in the browser.      
+
+#### Tracks Tab:
+* You may reveal or hide any of the data tracks listed in tabular form by ticking the corresponding boxes under the word 'Show', to the left of the panel. Use the 'Search' box at the top of the 'Tracks' tab to filter the list of tracks, and reveal or hide the 'JBrowse Track Selector' using the button to the right of the 'Search' box.
+
+#### Ref Sequence Tab:
 
 ### Select the Scaffold, Chromosome or Group to Begin your Work
 
@@ -375,6 +309,88 @@ Apollo immediately saves your work, automatically recording it on the database. 
 The user-created annotations may be exported as GFF3 or FASTA formatted files. These operations may be done for either a single scaffold, or to include user-created annotations from the entire assembled genome. To export the user-created annotations from a single scaffold, click on the track labeled ‘User-created Annotations ’, then click on the ‘Save track data’ option, and choose either the ‘GFF3’ or ‘FASTA’ options. To export GFF3, FASTA, or Chado formatted files from one or more scaffolds, or from the entire assembly, you may also go to the scaffold selection page and select all scaffolds of interest. Click on the ‘File’ menu at the top, and hover the mouse over the word ‘Export’ to choose one of the options available. Menu items for ‘GFF3’, ‘FASTA’, and ‘Chado’ will appear in your screen.
 
 Data from each of the evidence and prediction tracks can also be exported. GFF3 formatted files of the visible region on the Apollo screen, as well as files containing data from the entire scaffold/chromosome can be exported. The data will be formatted according to the original data used to display each track. For instance, RNA-Seq reads could be exported either as GFF3 or BED file formats.
+
+# Evidence Provided in the Public Demo
+
+The Apollo Demo was built with the genome of the honey bee (Apis mellifera).
+
+## Evidence in support of protein coding gene models
+
+### Consensus Gene Sets:
+
+* Official Gene Set v3.2
+* Official Gene Set v1.0
+
+### Consensus Gene Sets comparison:
+
+* OGSv3.2 genes that merge OGSv1.0 genes
+* OGSv3.2 genes that merge RefSeq genes
+* OGSv3.2 genes that split OGSv1.0 genes
+* OGSv3.2 genes that split RefSeq genes
+
+### Protein Coding Gene Predictions Supported by Biological Evidence:
+
+* NCBI Gnomon
+* Fgenesh++ with RNASeq training data
+* Fgenesh++ without RNASeq training data
+* NCBI RefSeq Protein Coding Genes
+* NCBI RefSeq Low Quality Protein Coding Genes
+
+### Ab initio protein coding gene predictions:
+
+* Augustus Set 12
+* Augustus Set 9
+* Fgenesh
+* GeneID
+* N-SCAN
+* SGP2
+
+### Transcript Sequence Alignment:
+
+* NCBI ESTs
+* Apis cerana reads (RNA-Seq)
+* Forager Bee Brain Illumina Contigs
+* Nurse Bee Brain Illumina Contigs
+* Forager RNA-Seq reads
+* Nurse RNA-Seq reads
+* Abdomen 454 Contigs
+* Brain and Ovary 454 Contigs
+* Embryo 454 Contigs
+* Larvae 454 Contigs
+* Mixed Antennae 454 Contigs
+* Ovary 454 Contigs
+* Testes 454 Contigs
+* Forager RNA-Seq HeatMap
+* Forager RNA-Seq XY Plot
+* Nurse RNA-Seq HeatMap
+* Nurse RNA-Seq XY Plot
+
+### Protein homolog alignment:
+
+* Acep_OGSv1.2
+* Aech_OGSv3.8
+* Cflo_OGSv3.3
+* Dmel_r5.42
+* Hsal_OGSv3.3
+* Lhum_OGSv1.2
+* Nvit_OGSv1.2
+* Nvit_OGSv2.0
+* Pbar_OGSv1.2
+* Sinv_OGSv2.2.3
+* Znev_OGSv2.1
+* Metazoa_Swissprot
+
+## Evidence in support of non protein coding gene models
+
+### Non-protein coding gene predictions:
+
+* NCBI RefSeq Noncoding RNA
+* NCBI RefSeq miRNA
+
+### Pseudogene predictions:
+
+* NCBI RefSeq Pseudogene
+
 
 
 # Additional Information About Apollo
