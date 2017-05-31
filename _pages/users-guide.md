@@ -44,39 +44,52 @@ Users may choose to browse the genomes of publicly available organisms, by click
 
 ### The Annotation Window and the Annotator Panel 
  
-Upon login, you will see the Apollo Annotation Window on the left and the Annotator Panel on the right. The Annotator Panel can be removed by using the arrow head icon (it also looks like a 'greater than' sign) at the top of the bar dividing the Panel from the rest of the main Apollo Window.
+Upon login, you will see the Apollo Annotation Window on the left and the Annotator Panel on the right. Users may hide the Annotator Panel using the arrow head icon (it also looks like a 'greater than' sign) at the top of the bar dividing the Panel from the rest of the main Apollo Window.
 
 #### Annotator Panel
 
-At the top of the panel, a drop down menu allows users to switch between Apollo instances for available organisms. The box located to the right of the drop down menu allows users to  A series of tabs in the Annotator Panel allow users to easily navigate to different regions of the genome, switch between organisms, or easily locate an annotation. It also allows administrators to edit a a number of features and generate reports. Below is a description of functionality in each tab. 
+The Annotator Panel grants curators easy access to the genome with a series of functions and tabs.    
+
+* At the top of the panel, a drop down menu allows users to switch between Apollo instances for all available organisms. 
+* The box located to the right of the drop down menu allows users to navigate to a specified reference sequence.
+* A button with the icon in the form of a person and the curator's username allows users to update their password.
+* The exit icon on the upper right corner allows curators to logout of Apollo.
+* A series of tabs in the Annotator Panel allow users to easily navigate to different regions of the genome, switch between organisms, or easily locate an annotation. It also allows administrators to edit a a number of features and generate reports. Below is a description of functionality in each tab. 
 
 ##### Annotations Tab: 
 * A list of manual annotations from the team of curators is available in a tabular format. 
-* To find an annotation enter the name in the 'Annotation Name' box, or type its location in the 'Reference Sequence' box. Drop-down menus located to the right of these boxes allow you to filter the content to be displayed. Click on the 'Go to Annotation' blue box to navigate to that location in the browser.
-* You may easily navigate to any annotation listed in the table. One click will select the annotation of interest and reveal a 'Details' section at the bottom of the panel. Double-click or use the arrowhead to the right of the annotation to expand the entry and reveal more details about each genomic element. Click once on the expanded entry in green letters to reveal a 'Code' tab at the bottom of the Annotator Panel, and click the blue button with an arrow inside a circle to navigate to that annotation in the browser.      
+* To find an annotation enter the name in the 'Annotation Name' box, or type its location in the 'Reference Sequence' box. 
+    * Drop-down menus located to the right of these boxes allow you to filter the content to be displayed. 
+    * Click on the 'Go to Annotation' blue box to navigate to that location in the browser.
+* You may easily navigate to any annotation listed in the table. 
+    * One click will select the annotation of interest and reveal a 'Details' section at the bottom of the panel. 
+    * Double-click or use the arrowhead to the right of the annotation to expand the entry and reveal more details about each genomic element. 
+    * Click once on the expanded entry in green letters to reveal a 'Code' tab at the bottom of the Annotator Panel, and click the blue button with an arrow inside a circle to navigate to that annotation in the browser.      
 
 ##### Tracks Tab:
-* You may reveal or hide any of the data tracks listed in tabular form by ticking the corresponding boxes under the word 'Show', to the left of the panel. Use the 'Search' box at the top of the 'Tracks' tab to filter the list of tracks, and reveal or hide the 'JBrowse Track Selector' using the button to the right of the 'Search' box.
+* You may reveal or hide any of the data tracks listed in tabular form by ticking the corresponding boxes under the word 'Show', to the left of the list. 
+* Use the 'Search' box at the top of the 'Tracks' tab to filter the list of tracks. 
+* Reveal or hide the 'JBrowse Track Selector' using the button to the right of the 'Search' box.
 
 ##### Ref Sequence Tab:
-* This tab includes a list of all available fragments of the assembled genome, e.g. scaffolds, chromosomes, etc., displayed in tabulated format. Use this tab to select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
+* This tab includes a list of all available fragments of the assembled genome, e.g. scaffolds, chromosomes, etc., displayed in tabulated format. Use this tab to select the scaffold, chromosome or linkage group where you wish to conduct your annotations. 
 * You may double-click on any of the listed 'Reference Sequences' to navigate directly to it, or use the 'Search' box at the top to locate a 'Reference Sequence' of interest. 
 * The 'Minimum' and 'Maximum' boxes in front of the word 'Length' allows users to filter the list of 'Ref Sequences'. 
-* The 'Export' section allows users to download all annotations from one or many 'Ref Sequences' in GFF3, FASTA, formats. For instance, select the preferred entry by clicking once on it from the list, then choose the format you wish to download, and lastly, click on the download icon to save the file in your computer. You may choose one or a few 'Ref Sequences' at a time using the download function with the word 'Selected (#)', or you may download all annotations from all 'Ref Sequences' using the download button with the word 'All' in it.      
+* The 'Export' section allows users to download all annotations from one or many 'Ref Sequences' in GFF3 or FASTA formats. For instance, select the preferred entry by clicking once on it from the list, then choose the format you wish to download, and lastly, click on the download icon to save the file in your computer. You may choose one or a few 'Ref Sequences' at a time using the download function with the word 'Selected (#)', or you may download all annotations from all 'Ref Sequences' using the download button with the word 'All' in it.      
 * You may also navigate through the listed 'Ref Sequences' using the arrows located immediately above the list.  
 
-The following are ptions for Users with Administrative Privileges
+The following are options for Users with Administrative Privileges.
 
 ##### Organism Tab: 
 * All available organisms, as well as statistics on the number of annotations and reference sequences per organism, will be isted here in tabular format. The bottom of the panel displays details about each selected organism.  
 
 ##### Users Tab: 
 * A list of users is available here in tabular format. Use the 'Search' box to find a user of interest, and the '+ Create User' button for new entries. 
-* Click on a user from the list to reveal details about the user, the groups the user is linked to, and the organisms the user has access to. 
+* Click on a user from the list to reveal details about the user, groups the user belongs to, and the organisms the user has access to. 
 
 ##### Groups Tab: 
 * Use this tab to manage groups in your Apollo instances. One or more users can be part of one or more groups. 
-* The 'Groups' tab offers the ability to organize your users into groups that may also have different permissions from other users.
+* The 'Groups' tab offers the ability to organize your users into groups with different permissions.
  
 ##### Admin Tab: 
 * This tab allows users with administrative privileges to customize 'Canned Elements' according to the [Apollo Guidelines for 'Canned Elements'](http://genomearchitect.readthedocs.io/en/latest/Configure.html#canned-elements). 
