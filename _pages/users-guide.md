@@ -9,12 +9,9 @@ This guide allows users to:
 * Become familiar with the environment of the Apollo annotation tool.
 * Understand Apollo’s functionality for the process of manual annotation.
 * Learn to corroborate and modify computationally predicted gene models using all available gene predictions and biological evidence available in Apollo.
+* Navigate through this user guide using the 'Table of Contents' at the bottom of the page
 
 --- 
-
-## Table of Contents
-1. This list will contain the toc (it doesn't matter what you write here)
-{:toc}
 
 # GENERAL INFORMATION
 
@@ -98,7 +95,8 @@ The following are options for Users with Administrative Privileges.
 
 ## The Apollo Main Window
 
-Figure 1 shows the Apollo annotation window. 
+<img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="700" height="430">
+Figure 1. Apollo Annotation Editor Overview. This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
 The blue bar at the top holds top-level menus with the following functions:
 
@@ -116,20 +114,17 @@ The blue bar at the top holds top-level menus with the following functions:
 * The ‘Help’ tab includes links to a list of helpful commands for Apollo, details about the version of Apollo in use and about JBrowse, as well as a link to explore Apollo Web Services options.
 * On the upper right corner, a box with the username offers the option to logout. When logged out, the word ‘Login’ will be displayed instead of the username.
 
-<img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="700" height="430">
-```Figure 1. Apollo Annotation Editor Overview. This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations.``` 
-
 The ‘Navigation Panel’ at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
 
 The light yellow track at the top of the working area is the ‘User-created Annotations’ area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. All transactions performed on the ‘User-created Annotations’ area can be reversed with the ‘Undo’ and ‘Redo’ options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
 
-A list of available 'Tracks' is available in tabulated format from the 'Annotator Panel', and it is possible to filter the tracks displayed in this list by typing on the ‘Search’ box above the list of tracks. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label in the 'Evidence' panel includes a drop-down menu with options to: 
+A list of available 'Tracks' is visible in tabulated format from the 'Annotator Panel', and it is possible to filter the tracks displayed in this list by typing on the ‘Search’ box above the list of tracks. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label in the 'Evidence' panel includes a drop-down menu with options to: 
 * Retrieve information ‘About this track’.
 * An option to 'Pin to top' leaves the track displayed at the top of the screen and below the ‘User-created Annotations’ track as users scroll down to inspect other data. 
 * The ‘Edit config’ option to bring up an editing window and modify the JSON file to configure the track’s display. 
 * Options to 'Delete' the track or 
-* 'Save track data' into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the JBrowse Configuration Guide at http://www.gmod.org/wiki/JBrowse_Configuration_Guide.
-* 'Show' or hide track the label
+* 'Save track data' into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the [JBrowse Configuration Guide](http://www.gmod.org/wiki/JBrowse_Configuration_Guide).
+* 'Show' or hide track the label.
 * 'Collapse' all genomic elements displayed in the track to simplify the view.
 
 # ANNOTATION
@@ -152,11 +147,11 @@ The existence of paralogs may cause your query to match more than one scaffold o
 
 ## Initiating an annotation
 
-If you have not already performed a Blat search to identify your gene of interest, you may do so at this point using the 'Sequence search' feature from the 'Tools' tab on the menu bar. You may also navigate along the scaffold using the navigation arrows. Your gene of interest may appear on the forward (sense) or reverse (anti-sense) strand. Gene predictions are labeled with identifiers, and users may retrieve additional information by selecting the entire model and using the right-click menu to select the 'View details'item.
+If you have not already performed a Blat search to identify your gene of interest, you may do so at this point using the 'Sequence search' feature from the 'Tools' tab on the menu bar. You may also navigate along the scaffold using the navigation arrows. Your gene of interest may appear on the forward (sense) or reverse (anti-sense) strand. Gene predictions are labeled with identifiers, and users may retrieve additional information by selecting the entire model and using the right-click menu to select the 'View details' item.
 
-After locating your gene of interest, add as many gene prediction and evidence tracks as you consider necessary to inform your annotation by dragging and dropping them from the list of ‘Available Tracks’ on the left. Scroll through the different tracks of gene predictions and choose one that you consider most closely reflects the actual structure of the gene. It is also possible to filter the tracks displayed in this list by typing on the ‘filter by text’ box. You may base your decision on prior knowledge of the reliability of each gene prediction track (e.g., select an evidence-based gene model instead of an ab initio gene prediction). Alternatively, you may compare the gene prediction tracks to a BLAST alignment or other aligned data (e.g.: alignments of protein homologs, cDNAs and, RNAseq reads). To highlight your preferred gene model, double click on any exon or click on one of the introns to select the entire gene model. You may also choose exons from two or more separate tracks of evidence. Drag the highlighted model or all pieces of evidence into the ‘User-created Annotations’ area.
+After locating your gene of interest, display as many gene prediction and evidence tracks as you consider necessary to inform your annotation by ticking them from the list of available 'Tracks' in the 'Annotator Panel'. Scroll through the different tracks of gene predictions and choose one that you consider most closely reflects the actual structure of the gene. It is also possible to filter the tracks displayed in this list by typing on the 'Search' box. You may base your decision on prior knowledge of the reliability of each gene prediction track (e.g., select an evidence-based gene model instead of an ab initio gene prediction). Alternatively, you may compare the gene prediction tracks to a BLAST alignment or other aligned data (e.g.: alignments of protein homologs, cDNAs and, RNAseq reads). Double click on any exon or click on one of the introns of your preferred gene model to select the entire gene model. You may also choose exons from two or more separate tracks of evidence. Drag the selected model, or all pieces of evidence into the ‘User-created Annotations’ area.
 
-At this point you may download the protein sequence (see section 4.3.1) to query a protein database and help you determine if the selected gene model is, biologically speaking, an accurate approximation to the gene. For example, you may perform a protein sequence search of UniProt or NCBI’s non-redundant peptide database, NR. If you have knowledge of protein domains in your gene of interest, you may perform a protein domain search of the InterPro databases to verify that your selected gene model contains the expected domains. If further investigation suggests that you have not selected the best gene model to start annotating, delete it by highlighting it (as above) and using the ‘Delete’ function from the right-click menu.
+At this point you may download the protein sequence (see 'Get Sequences' below) to query a protein database and help you determine if the selected gene model is, biologically speaking, an accurate approximation to the gene. For example, you may perform a protein sequence search of [UniProt](http://www.uniprot.org/) or [NCBI’s non-redundant peptide database (nr) using BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). If you have knowledge of protein domains in your gene of interest, you may perform a protein domain search of the [InterPro databases](https://www.ebi.ac.uk/interpro/) to verify that your selected gene model contains the expected domains. If further investigation suggests that you have not selected the best gene model to start annotating, delete it by highlighting it (as described above) and using the ‘Delete’ function from the right-click menu.
 
 Once a gene model is selected as the best starting point for annotation, the annotator must decide whether it needs further modification. Protein or domain database searches may have already informed this decision. Scroll down the evidence tracks to see if splice sites in transcript alignments agree with the selected gene model, or if evidence suggests addition or modification of an exon is necessary. Transcript alignments (e.g. cDNA/EST/RNASeq tracks) that are significantly longer than the gene model may indicate the presence of additional coding sequence or untranslated regions (UTRs). Keep in mind that transcript alignments may be shorter than the gene model due to the fragmented nature of current transcript sequencing technologies. Similarly, protein alignments may not reflect the entire length of the coding region because divergent regions may not align well, resulting in a short protein alignment or one with gaps. Protein and transcript alignments in regions with tandem, closely related genes might also be problematic, with partial alignments to one gene, then skipping over to align the rest to a second gene.
 
@@ -442,5 +437,7 @@ We provide [additional documentation for installation and setup](http://genomear
 [Our demo page](../public-demo/) provides information on connecting to our demonstration site.
 Apollo is a member of the [GMOD project](http://gmod.org).
 
-
+## Table of Contents
+1. This list will contain the toc (it doesn't matter what you write here)
+{:toc} 
 
