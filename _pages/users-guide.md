@@ -228,53 +228,54 @@ This is the right-click menu.
 
 ### Get Sequences
 
-Select one or more exons, or an entire gene model of interest, and retrieve the right-click menu to select the ‘Get sequence’ feature. Chose from the options to obtain protein, cDNA, CDS or genomic sequences.
+Select one or more exons, or an entire gene model of interest, and retrieve the right-click menu to select the 'Get sequence' function. Chose from the options to obtain protein, cDNA, CDS or genomic sequences.
 
 
 ### Merge Exons, Merge Transcripts
 
-Select each of the joining exons while holding down the Shift key, open the right-click menu and select the ‘Merge’ option.
+Select each of the joining exons while holding down the 'Shift' key, open the right-click menu and select the 'Merge' option.
 
 
 ### Add an Exon
 
-You may select and drag the putative new exon from a track in the ‘Evidence’ panel and add it directly to an annotated transcript in the ‘User-created Annotations’ area. Click the exon and, holding your finger on the mouse button, drag the cursor until it touches the receiving transcript. The receiving transcript will be highlighted in dark green when it is okay to release the mouse button. When the mouse button is released the additional exon becomes attached to the receiving transcript. If the receiving transcript is on the opposite strand from the one where you selected the new exon, a warning dialog box will ask you to confirm the change.
+You may select and drag the putative new exon from a track in the 'Evidence' panel and add it directly to an annotated transcript in the 'User-created Annotations' area. Click the exon and, holding your finger on the mouse button, drag the exon using the cursor until it hovers over the receiving transcript. The receiving transcript will be highlighted in dark green when it is okay to release the mouse button. When the mouse button is released the additional exon becomes attached to the receiving transcript. If the receiving transcript is on the opposite strand from the one where you selected the new exon, a warning dialog box will ask you to confirm the change.
 
-As described before, Apollo dynamically recalculates the longest ORF for each model, so you must check whether adding one or more exons disrupts the reading frame, inserts premature 'Stop' signals, etc.
+Apollo dynamically recalculates the longest ORF for each model, so you must check whether adding one or more exons disrupts the reading frame, inserts premature 'Stop' signals, etc.
 
 
 ### Make an Intron, Split an Exon
 
-Select the ‘Make intron’ option from the right-click menu over an exon will identify the nearest canonical splice sites (5’-…exon]GT/AG[exon…-3’) to modify the model, and Apollo will also recalculate the longest ORF. If Apollo cannot find a set of canonical splice sites within the selected exon, a dialog box will appear with a warning.
+Select the 'Make intron' option from the right-click menu over an exon will identify the nearest canonical splice sites (```5’-…exon]GT/AG[exon…-3’```) to modify the model, and Apollo will also recalculate the longest ORF. If Apollo cannot find a set of canonical splice sites within the selected exon, a dialog box will appear with a warning.
 
-If everything you know about the model indicates that an exon should not be preserved in its current form, you may manually disrupt the exon using the ‘Split’ option from the right-click menu, which creates a 1-nucleotide intron without taking into account whether or not the surrounding splice sites are canonical.
+If everything you know about the model indicates that an exon should not be preserved in its current form, you may manually disrupt the exon using the 'Split option from the right-click menu, which creates a 1-nucleotide intron without taking into account whether or not the surrounding splice sites are canonical.
 
 
 ### Delete an Exon
 
-Select the exon using a single click (double click selects the entire model), and select the ‘Delete’ option from the right-click menu. Check whether deleting one or more exons disrupts the reading frame, inserts premature Stop signals, etc.
+Select the exon using a single click (double click selects the entire model), and select the 'Delete' option from the right-click menu. Check whether deleting one or more exons disrupts the reading frame, inserts premature 'Stop' signals, etc.
 
 
 ### Flip the Strand of Annotation
 
-At times transcript alignments may appear on the strand opposite to the model’s coding strand, particularly when the transcript alignment does not include a splice junction, which makes it difficult to determine the coding direction. If aligned evidence is used to initiate an annotation, and it is later determined that the annotation is on the incorrect strand, the user may choose the ‘Flip strand’ option from the right-click menu to reverse the orientation of the annotation. As mentioned before, annotators should always reassess the integrity of the translation after modifying an annotation.
+At times, transcript alignments may appear on the strand opposite to the model’s coding strand, particularly when the transcript alignment does not include a splice junction, which makes it difficult to determine the coding direction. If aligned evidence is used to initiate an annotation, and it is later determined that the annotation is on the incorrect strand, the user may choose the 'Flip strand' option from the right-click menu to reverse the orientation of the annotation. As mentioned before, annotators should always reassess the integrity of the translation after modifying an annotation.
 
 
 ## Complex Cases
 
 ### Merge Two Gene Predictions on the Same Scaffold
 
-Evidence may support the merge of two (or more) different gene models. To begin the annotation select all the gene models that you would like to merge, then drag them from the ‘Evidence’ panel onto the ‘User-created Annotations’ area. Be aware that protein alignments may not be a useful starting point because these may have incorrect splice sites and may lack non-conserved regions.
+Evidence may support the merge of two (or more) different gene models. To begin the annotation select all the gene models that you would like to merge, then drag them from the 'Evidence' panel onto the 'User-created Annotations' area. Be aware that protein alignments may not be a useful starting point because these may have incorrect splice sites and may lack non-conserved regions.
 
-You may select the supporting evidence tracks and drag their ‘ghost’ over the candidate models (without releasing them) to corroborate the overlap. Additionally, zoom in and carefully review edge-matching (Figure 4) and coverage across models.
+You may select the supporting evidence tracks and drag their 'ghost' over the candidate models (without releasing them) to corroborate the overlap. Additionally, zoom in and carefully review edge-matching (Figure 4) and coverage across models.
 
-Alternatively, you may select and drag each proposed gene model separately onto the ‘User-created Annotations’ area. Once you are certain that two models should be merged, after checking boundaries and all supporting evidence, bring them together by holding the ‘Shift’ key and clicking on an intron from each of the merging gene models; in this way you will select both models completely. Then select the ‘Merge’ option from the right-click menu. Get the resulting translation sequence and inspect it by querying a protein database, such as UniProt. Be sure to record the IDs of all starting gene models in the ‘Comments’ table, and use the appropriate canned comment to indicate that this annotation is the result of a merge.
+Alternatively, you may select and drag each proposed gene model separately onto the 'User-created Annotations' area. Once you are certain that two models should be merged, after checking boundaries and all supporting evidence, bring them together by holding the 'Shift' key and clicking on an intron from each of the merging gene models; in this way you will select both models completely. Then select the 'Merge' option from the right-click menu. Get the resulting translation sequence and inspect it by querying a protein database, such as UniProt. Be sure to record the IDs of all starting gene models in the 'Comments' table, and use the appropriate canned comment to indicate that this annotation is the result of a merge.
 
-<center>
 <img src="/images/Web_Apollo_User_Guide_edge-matching.png" width="700" height="407">
-<br>
-<b>Figure 4.</b> Edge-matching in Apollo. When a feature is selected, the exon edges are marked with a red box. All other features that share the same exon boundaries are marked with a red line on the matching edge. This feature allows annotators to confirm that evidence is in agreement without examining each exon at the base level.
-</center>
+
+##### Figure 4. Edge-matching in Apollo. 
+
+When a feature is selected, the exon edges are marked with a red box. All other features that share the same exon boundaries are marked with a red line on the matching edge. This feature allows annotators to confirm that evidence is in agreement without examining each exon at the base level.
+
 
 
 ### Merge Two Gene Predictions from Different Scaffolds
