@@ -1,5 +1,5 @@
 ---
-title: User's Guide
+title: User Guide
 type: single
 permalink: /markdown-users-guide/
 ---
@@ -21,11 +21,11 @@ The major steps of manual annotation using Apollo can be summarized as follows:
 
 * Locate a chromosomal region of interest.
 * Determine whether a feature in an existing evidence track provides a reasonable gene model to start annotating.
-* Drag the selected feature to the ‘User Annotation’area, creating an initial gene model.
+* Drag the selected feature to the 'User Annotation' area, creating an initial gene model.
 * Use editing functions to edit the gene model if necessary.
 * Check your edited gene model for consistency with existing homologs by exporting the FASTA formatted sequence and searching a protein sequence database, such as UniProt or the NCBI Non Redundant (NR) database, and by conducting preliminary functional assignments using the Gene Ontology (GO) database.
 
-When annotating gene models using Apollo, remember that you are looking at a ‘frozen’ version of the genome assembly. This means that you will not be able to modify the assembled genome sequence itself, but you will be able to instruct Apollo to take into account modifications to the reference sequence and calculate their consequences. For instance, for any given protein coding gene, Apollo is able to predict the consequences that deleting a string of nucleotide residues will have on the coding sequence.   
+When annotating gene models using Apollo, remember that you are looking at a 'frozen' version of the genome assembly. This means that you will not be able to modify the assembled genome sequence itself, but you will be able to instruct Apollo to take into account modifications to the reference sequence and calculate their consequences. For instance, for any given protein coding gene, Apollo is able to predict the consequences that deleting a string of nucleotide residues will have on the coding sequence.   
 
 # NAVIGATION
         
@@ -98,32 +98,32 @@ The following are options for Users with Administrative Privileges.
 <img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="800" height="491">
 
 ##### Figure 1. Apollo Annotation Editor Overview. 
-This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
+This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The 'Navigation Panel' runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The 'User-created Annotations' panel contains the manual annotations. C) The 'Evidence' panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the 'Evidence' panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
 The blue bar at the top holds top-level menus with the following functions:
 
-* ‘File’:
+* 'File':
     * Allows users to add data files (e.g. GFF3, BAM, BigWig, etc.) by opening sequence and track files, as well as loading tracks via URLs. Apollo automatically suggests tracks to display their contents. 
     * It is possible to combine the information from quantitative tracks into a 'Combination Track'. Data from tracks containing graphs may be compared and combined in an additive, subtractive, or divisive arithmetic operation. The resulting track highlights the differences between the data. 
     * The third option allows users to ‘Add sequence search track’. This tool creates tracks showing regions of the reference sequence (or its translations) that match a given string of nucleotides or amino acids residues.
-* ‘View’:
+* 'View':
     * Allows users to color all exons in display according to CDS frame.
     * Users may choose between light and dark options for their working environment by changing the 'Color Scheme.' 
     * Toggle the view of the plus and minus strands, and reveal or hide the labels for each track.
     * It is also possible to highlight a region using the 'Set highlight' option and marking the region. The highlight option will automatically be turned 'On' when inspecting the results from a BLAT search. 
     * Annotators will also use this menu when resizing the scale of quantitative tracks.
-* ‘Tools’ leads users to perform BLAT searches (see below).
-* The ‘Help’ tab includes links to a list of helpful commands for Apollo, details about the version of Apollo in use and about JBrowse, as well as a link to explore Apollo Web Services options.
-* On the upper right corner, a box with the username offers the option to logout. When logged out, the word ‘Login’ will be displayed instead of the username.
+* 'Tools' leads users to perform BLAT searches (see below).
+* The 'Help' tab includes links to a list of helpful commands for Apollo, details about the version of Apollo in use and about JBrowse, as well as a link to explore Apollo Web Services options.
+* On the upper right corner, a box with the username offers the option to logout. When logged out, the word 'Login' will be displayed instead of the username.
 
-The ‘Navigation Panel’ at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
+The 'Navigation Panel' at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and 'Highlight a region'.
 
-The light yellow track at the top of the working area is the 'User-created Annotations' area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. All transactions performed on the ‘User-created Annotations’ area can be reversed with the ‘Undo’ and ‘Redo’ options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
+The light yellow track at the top of the working area is the 'User-created Annotations' area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. All transactions performed on the 'User-created Annotations' area can be reversed with the 'Undo' and 'Redo' options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
 
 A list of available 'Tracks' is visible in tabulated format from the 'Annotator Panel' (Fig. 1 D), and it is possible to filter the tracks displayed in this list by typing on the ‘Search’ box above the list of tracks. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label in the 'Evidence' panel includes a drop-down menu with options to: 
 * Retrieve information ‘About this track’.
-* An option to 'Pin to top' leaves the track displayed at the top of the screen and below the ‘User-created Annotations’ track as users scroll down to inspect other data. 
-* The ‘Edit config’ option to bring up an editing window and modify the JSON file to configure the track’s display. 
+* An option to 'Pin to top' leaves the track displayed at the top of the screen and below the 'User-created Annotations' track as users scroll down to inspect other data. 
+* The 'Edit config' option to bring up an editing window and modify the JSON file to configure the track’s display. 
 * Options to 'Delete' the track or 
 * 'Save track data' into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the [JBrowse Configuration Guide](http://www.gmod.org/wiki/JBrowse_Configuration_Guide).
 * 'Show' or hide track the label.
@@ -141,9 +141,9 @@ Below are detail about both biological principles and technical aspects to consi
 
 ### Search for a specific sequence
 
-If you do not know the scaffold ID and have the sequence of a transcript or protein homolog related to your gene of interest, you might use the ‘Search Sequence’ feature to run a BLAT (BLAST-Like Alignment Tool) search. Querying the assembled genome using BLAT will determine the existence of a gene model prediction that is putatively homologous to your gene of interest. Click the ‘Tools’ item on the Apollo menu bar, and select ‘Sequence Search’ from the dropdown choices. Choose to run a Protein or Nucleotide BLAT search from the drop down menu as appropriate, and paste the string of residues to be used as query. Check the box labeled ‘Search all genomic sequences’ to search the entire genome.
+If you do not know the scaffold ID and have the sequence of a transcript or protein homolog related to your gene of interest, you might use the 'Search Sequence' feature to run a BLAT (BLAST-Like Alignment Tool) search. Querying the assembled genome using BLAT will determine the existence of a gene model prediction that is putatively homologous to your gene of interest. Click the 'Tools' item on the Apollo menu bar, and select 'Sequence Search' from the drop-down choices. Choose to run a Protein or Nucleotide BLAT search from the drop down menu as appropriate, and paste the string of residues to be used as query. Check the box labeled 'Search all genomic sequences' to search the entire genome.
 
-The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about ‘Highlights’ below.
+The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about 'Highlights' below.
 
 * A word on Blat: Blat of DNA is designed to quickly find sequences of 95% and greater similarity of length 40 bases or more, and it may miss more divergent or shorter sequence alignments. On protein, Blat finds sequences of 80% and greater similarity to the query of length 20+ amino acids. Higher speed at the price of lesser homology depth make Blat a commonly used tool to look up the location of a sequence in the genome or determine the exon structure of an mRNA. Learn more about Blat [here](https://genome.ucsc.edu/FAQ/FAQblat.html).
 
@@ -153,7 +153,7 @@ If you have not already performed a Blat search to identify your gene of interes
 
 After locating your gene of interest, display as many gene prediction and evidence tracks as you consider necessary to inform your annotation by ticking them from the list of available 'Tracks' in the 'Annotator Panel'. Scroll through the different tracks of gene predictions and choose one that you consider most closely reflects the actual structure of the gene. It is also possible to filter the tracks displayed in this list by typing on the 'Search' box. You may base your decision on prior knowledge of the reliability of each gene prediction track (e.g., select an evidence-based gene model instead of an ab initio gene prediction). Alternatively, you may compare the gene prediction tracks to a BLAST alignment or other aligned data (e.g.: alignments of protein homologs, cDNAs and, RNAseq reads). Double click on any exon or click on one of the introns of your preferred gene model to select the entire gene model. You may also choose exons from two or more separate tracks of evidence. Drag the selected model, or all pieces of evidence into the ‘User-created Annotations’ area.
 
-At this point you may download the protein sequence (see 'Get Sequences' below) to query a protein database and help you determine if the selected gene model is, biologically speaking, an accurate approximation to the gene. For example, you may perform a protein sequence search of [UniProt](http://www.uniprot.org/) or [NCBI’s non-redundant peptide database (nr) using BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). If you have knowledge of protein domains in your gene of interest, you may perform a protein domain search of the [InterPro databases](https://www.ebi.ac.uk/interpro/) to verify that your selected gene model contains the expected domains. If further investigation suggests that you have not selected the best gene model to start annotating, delete it by highlighting it (as described above) and using the ‘Delete’ function from the right-click menu.
+At this point you may download the protein sequence (see 'Get Sequences' below) to query a protein database and help you determine if the selected gene model is, biologically speaking, an accurate approximation to the gene. For example, you may perform a protein sequence search of [UniProt](http://www.uniprot.org/) or [NCBI’s non-redundant peptide database (nr) using BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). If you have knowledge of protein domains in your gene of interest, you may perform a protein domain search of the [InterPro databases](https://www.ebi.ac.uk/interpro/) to verify that your selected gene model contains the expected domains. If further investigation suggests that you have not selected the best gene model to start annotating, delete it by highlighting it (as described above) and using the 'Delete' function from the right-click menu.
 
 Once a gene model is selected as the best starting point for annotation, the annotator must decide whether it needs further modification. Protein or domain database searches may have already informed this decision. Scroll down the evidence tracks to see if splice sites in transcript alignments agree with the selected gene model, or if evidence suggests addition or modification of an exon is necessary. Transcript alignments (e.g. cDNA/EST/RNASeq tracks) that are significantly longer than the gene model may indicate the presence of additional coding sequence or untranslated regions (UTRs). Keep in mind that transcript alignments may be shorter than the gene model due to the fragmented nature of current transcript sequencing technologies. Similarly, protein alignments may not reflect the entire length of the coding region because divergent regions may not align well, resulting in a short protein alignment or one with gaps. Protein and transcript alignments in regions with tandem, closely related genes might also be problematic, with partial alignments to one gene, then skipping over to align the rest to a second gene.
 
@@ -176,14 +176,14 @@ Zoom in sufficiently to clearly resolve each exon as a distinct rectangle. When 
 
 You may use square bracket keys [ and ] to jump to the next exon splice junction or coding sequence (CDS). The curly bracket keys { and } allow users to jump to the next transcript. 
 
-To correct an exon boundary to match data in the evidence tracks, use the edge-matching options from the right-click menu as described in the 'Add UTRs' section above. Alternatively you may ‘Zoom to base level', click on the exon to select it and place the cursor over the edge of the exon; when the cursor changes to an arrow, drag the edge of the exon to the desired new coordinates.
+To correct an exon boundary to match data in the evidence tracks, use the edge-matching options from the right-click menu as described in the 'Add UTRs' section above. Alternatively you may 'Zoom to base level', click on the exon to select it and place the cursor over the edge of the exon; when the cursor changes to an arrow, drag the edge of the exon to the desired new coordinates.
 
 In some cases all the data may disagree with the annotation, in other cases some data support the annotation and some of the data support one or more alternative transcripts. Try to annotate as many alternatives transcripts as the evidence data support.
 
 <img src="/images/Web_Apollo-User_Guide_Fig2.jpg" width="300" height="210">
 
 ##### Figure 2. Apollo view, zoomed to base level. 
-The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The ‘User-created Annotation’ track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the ‘Stop’ signal.
+The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The 'User-created Annotation' track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the 'Stop' signal.
 
 
 ### Splice Sites
@@ -321,7 +321,7 @@ Once the genomic element and track of interest are located in the 'Evidence' pan
 
 Modifications such as editing boundaries, duplicating, and deleting the annotation, as well as the 'History', 'Redo' and 'Undo' functions, are possible for all non-coding features. Additional modifications such as 'Split' and 'Make intron' are also possible for ncRNAs.
 
-All metadata about the annotation should be added using the ‘Information Editor’, as described below.
+All metadata about the annotation should be added using the 'Information Editor', as described below.
 
 
 # The Information Editor
