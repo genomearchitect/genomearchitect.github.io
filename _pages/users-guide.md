@@ -51,6 +51,7 @@ Upon login, you will see the Apollo Annotation Window on the left and the Annota
 The Annotator Panel grants curators easy access to the genome with a series of functions and tabs.    
 
 * At the top of the panel, a drop down menu allows users to switch between Apollo instances for all available organisms. 
+* The icon of 2 links in a chain, located to the left of the drop-down menu, indicate an option for curators to share with collaborators their location in the genome as a permanent link. Apollo will display the visible region, tracks and highlights that were displayed at the time the URL link was captured.
 * The box located to the right of the drop down menu allows users to navigate to a specified reference sequence.
 * A button with the icon in the form of a person and the curator's username allows users to update their password.
 * The exit icon on the upper right corner allows curators to logout of Apollo.
@@ -97,24 +98,28 @@ The following are options for Users with Administrative Privileges.
 
 ## The Apollo Main Window
 
-Figure 1 shows the Apollo annotation window. The blue bar at the top includes the following functions:
+Figure 1 shows the Apollo annotation window. 
 
-The ‘File’ tab allows users to add any combination of data files (e.g. GFF3, BAM, BigWig) and URLs. Apollo automatically suggests tracks to display their contents. It is also possible to combine the information from quantitative tracks into a 'Combination Track'. Data from tracks containing graphs may be compared and combined in an additive, subtractive, or divisive arithmetic operation. The resulting track highlights the differences between the data. The third option allows users to ‘Add sequence search track’. This tool creates tracks showing regions of the reference sequence (or its translations) that match a given string of nucleotides or amino acids residues.
-‘View’ allows users to color all exons in display according to CDS frame, and to toggle the view of the plus and minus strands. It is also possible to 'Set highlight' over a region by selecting this option and marking the region. The highlight option will automatically be turned 'On' when inspecting the results from a BLAT search. Annotators will also use this menu when resizing the scale of quantitative tracks.
-‘Tools’ leads users to perform BLAT searches (see section 3.1.2).
-The ‘Help’ tab includes links to a list of helpful commands for Apollo, and details about JBrowse.
-The ‘Login’ option allows users to enter and exit the Apollo editing tool instance. When logged in, the user name will be displayed instead of the word ‘Login ’.
-The URL from the browser window can be shared with collaborators as a permanent link. Apollo will display the visible region, tracks and highlights that were displayed at the time the URL link was captured.
+The blue bar at the top holds top-level menus with the following functions:
 
-<center>
+* ‘File’:
+    * Allows users to add data files (e.g. GFF3, BAM, BigWig, etc.) by opening sequence and track files, as well as loading tracks via URLs. Apollo automatically suggests tracks to display their contents. 
+    * It is possible to combine the information from quantitative tracks into a 'Combination Track'. Data from tracks containing graphs may be compared and combined in an additive, subtractive, or divisive arithmetic operation. The resulting track highlights the differences between the data. 
+    * The third option allows users to ‘Add sequence search track’. This tool creates tracks showing regions of the reference sequence (or its translations) that match a given string of nucleotides or amino acids residues.
+* ‘View’:
+    * Allows users to color all exons in display according to CDS frame.
+    * Users may choose between light and dark options for their working environment by changing the 'Color Scheme.' 
+    * Toggle the view of the plus and minus strands, and reveal or hide the labels for each track.
+    * It is also possible to highlight a region using the 'Set highlight' option and marking the region. The highlight option will automatically be turned 'On' when inspecting the results from a BLAT search. 
+    * Annotators will also use this menu when resizing the scale of quantitative tracks.
+* ‘Tools’ leads users to perform BLAT searches (see below).
+* The ‘Help’ tab includes links to a list of helpful commands for Apollo, details about the version of Apollo in use and about JBrowse, as well as a link to explore Apollo Web Services options.
+* On the upper right corner, a box with the username offers the option to logout. When logged out, the word ‘Login’ will be displayed instead of the username.
+
 <img src="/images/Web_Apollo_User_Guide_Fig1_B.png" width="700" height="430">
-<br>
-<b>Figure 1.</b> Apollo Annotation Editor Overview. This view shows an annotation in progress. The main interface is similar to JBrowse, with available tracks displayed as a set of tiles along the left side of the main panel. To turn a track on or off, click the box in front of the track title from the column on the left. A. The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the group (scaffold or chromosome) for annotation, and the text-box is used to manually enter its coordinates. B. The ‘User-created Annotations’ panel contains the manual annotations. C. The ‘Evidence’ panel contains the evidence tracks. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. 
-</center>
+Figure 1. Apollo Annotation Editor Overview. This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
-
-
-The ‘Navigation Panel’ at the top of the window (Fig 1. A) houses controls for localization within a chromosome or scaffold, controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
+The ‘Navigation Panel’ at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
 
 The light yellow track at the top of the working area is the ‘User-created Annotations’ area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any non-translated elements to be modified. All transactions performed on the ‘User-created Annotations’ area can be reversed with the ‘Undo’ and ‘Redo’ options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
 
