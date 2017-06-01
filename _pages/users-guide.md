@@ -95,8 +95,10 @@ The following are options for Users with Administrative Privileges.
 
 ## The Apollo Main Window
 
-<img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="700" height="430">
-Figure 1. Apollo Annotation Editor Overview. This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
+<img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="800" height="491">
+
+#####Figure 1. Apollo Annotation Editor Overview. 
+This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
 The blue bar at the top holds top-level menus with the following functions:
 
@@ -158,36 +160,41 @@ Once a gene model is selected as the best starting point for annotation, the ann
 
 ## Simple Cases
 
-In this guide, a ‘simple case’ occurs when the predicted gene model is correct or nearly correct, and this model is supported by evidence that mostly or completely agrees with the prediction. Evidence that extends beyond the predicted model is assumed to be non-coding sequence. The following sections describe simple modifications.
+In this guide, a 'simple case' is that when the predicted gene model is correct or nearly correct, and this model is supported by evidence that mostly agrees or completely agrees with the prediction. Aligned evidence (experimental data) that extends beyond the predicted model is assumed to be non-coding sequence. The following sections describe simple modifications.
 
 
 ### Add UTRs
 
-Gene predictions may or may not include UTRs. If transcript alignment data are available and extend beyond your original annotation, you may add or extend UTRs. To do this, users may implement edge-matching options to ‘Set as 5’ end’, ‘Set as 3’ end’, or ‘Set as both ends’ from the right-click menu. To use these options, select the exon that needs to be extended, then keep the ‘Shift’ key down as you select the exon from the track of evidence displaying the expected UTR (given the evidence), then use the right click menu to choose the appropriate option to extend to the desired UTR. Alternatively this operation can be performed manually by positioning the cursor at the edge of the exon that needs to be extended, then using the right-click to display the menu and choosing the ‘Zoom to base level’ option. Place the cursor over the edge of the exon (5’ or 3’ end exon as needed) until it becomes a black arrow (Fig. 2), then click and drag the edge of the exon to the new coordinate position that includes the UTR. To add a new, spliced UTR to an existing annotation follow the procedure for adding an exon, as detailed in section 4.3.3.
+Gene predictions may or may not include UTRs. If transcript alignment data are available and extend beyond your original annotation, you may add or extend UTRs. To do this, users may implement edge-matching options to 'Set as 5' end', 'Set as 3' end', or 'Set as both ends' from the right-click menu. To use these options, select the exon that needs to be extended, then keep the 'Shift' key down as you select the exon from the track of evidence displaying the expected UTR (given the evidence), then use the right click menu to choose the appropriate option to extend to the desired UTR. 
+
+Alternatively this operation can be performed manually by positioning the cursor at the edge of the exon that needs to be extended, then using the right-click to display the menu and choosing the 'Zoom to base level' option. Place the cursor over the edge of the exon (5’ or 3’ end exon as needed) until it becomes a black arrow (see Fig. 2), then click and drag the edge of the exon to the new coordinate position that includes the UTR. To add a new, spliced UTR to an existing annotation follow the procedure for adding an exon, as detailed in the section 'Add an Exon' below.
 
 
 ### Exon Structure Integrity
 
-Zoom in sufficiently to clearly resolve each exon as a distinct rectangle. When two exons from different tracks share the same start and/or end coordinates, a red bar appears at the edge of the exon. Visualize this edge-matching function by either selecting the whole annotation or one exon at a time. Scrolling along the length of the annotation exon boundaries may be verified against available EST data. Use the square bracket keys [ and ] to jump to the next exon splice junction or coding sequence (CDS). The curly bracket keys { and } allow users to jump to the next transcript. Check whether there are any ESTs or transcript data contigs, or any RNASeq reads showing evidence that one or more of the annotated exons are missing, or include additional exons.
+Zoom in sufficiently to clearly resolve each exon as a distinct rectangle. When two exons from different tracks share the same start and/or end coordinates, a red bar appears at the edge of the exon. Visualize this edge-matching function by either selecting the whole annotation or one exon at a time. Scrolling along the length of the annotation exon boundaries may be verified against available EST data. Check whether there are any ESTs or transcript data contigs, or any RNASeq reads showing evidence that one or more of the annotated exons are missing, or include additional exons.
 
-To correct an exon boundary to match data in the evidence tracks use the edge-matching options from the right-click menu as described in 4.2.1. Alternatively you may ‘Zoom to base level', click on the exon to select it and place the cursor over the edge of the exon; when the cursor changes to an arrow, drag the edge of the exon to the desired new coordinates.
+You may use square bracket keys [ and ] to jump to the next exon splice junction or coding sequence (CDS). The curly bracket keys { and } allow users to jump to the next transcript. 
+
+To correct an exon boundary to match data in the evidence tracks, use the edge-matching options from the right-click menu as described in the 'Add UTRs' section above. Alternatively you may ‘Zoom to base level', click on the exon to select it and place the cursor over the edge of the exon; when the cursor changes to an arrow, drag the edge of the exon to the desired new coordinates.
 
 In some cases all the data may disagree with the annotation, in other cases some data support the annotation and some of the data support one or more alternative transcripts. Try to annotate as many alternatives transcripts as the evidence data support.
 
-
-Zoomed to base level
-
-<center>
 <img src="/images/Web_Apollo-User_Guide_Fig2.jpg" width="300" height="210">
-<br>
-<b>Figure 2.</b> Apollo View zoomed to base level. The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The ‘User-created Annotation’ track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the ‘Stop’ signal.
-</center>
+
+##### Figure 2. Apollo view, zoomed to base level. 
+The DNA track and annotation track are visible. The DNA track includes the sense strand (top) and anti-sense strand (bottom). The six reading frames flank the DNA track, with the three forward frames above and the three reverse frames below. The ‘User-created Annotation’ track shows the terminal end of an annotation. The green rectangle highlights the location of the nucleotide residues in the ‘Stop’ signal.
+
 
 ### Splice Sites
 
-In most Eukaryotes the majority of splice sites at the exon/intron boundaries appear as 5’-…exon]GT/AG[exon…-3’. All other splice sites are here called ‘non-canonical’ and are indicated in Apollo with an orange circle with a white exclamation point inside, placed over the edge of the offending exon. When alternative transcripts are added, be sure to inspect each splice transcript to check for any changes that the changes.
+In most Eukaryotes the majority of splice sites at the exon/intron boundaries appear as 5’-…exon]GT/AG[exon…-3’. All other splice sites are here called ‘non-canonical’ and are indicated in Apollo with an orange circle with a white exclamation point inside, placed over the edge of the offending exon. When alternative transcripts are added, be sure to inspect each splice site to check for any changes that the changes.
 
-If a non-canonical splice site is present, zoom to base level to review it. Not all non-canonical splice sites must be corrected, and in such cases they should be flagged with the appropriate comment. (Adding a ‘Comment’ is addressed in Section 5). Prior knowledge about the organism of interest may help the user decide whether a predicted non-canonical splice site is likely to be real. For instance, GC splice donors have been observed in many organisms, but less frequently than the GT splice donors described above. As mentioned above Apollo flags GC splice donors as non-canonical. To further complicate the problem, splice sites that are non-canonical, but found in nature, such as GC donors, may not be recognized by some gene prediction algorithms. In such cases a gene prediction algorithm that does not recognize GC splice donors may have ignored a true GC donor and selected another non-canonical splice site that is less frequently observed in nature. Therefore, if a non-canonical splice site that is rarely observed in nature is present, you may wish to search the region for a more frequent in-frame non-canonical splice site, such as a GC donor. If there is a close in-frame site that is more likely to be the correct splice donor, make this adjustment while zoomed at base level. To assist in the decision to modify a splice site, download the translated sequences and use them to search well-curated protein databases, such as UniProt, to see if you can resolve the question using protein alignments. Incorrect splice sites would likely cause gaps in the alignments. If there does not appear to be any way to resolve the non-canonical splice, leave it and add a comment.
+If a non-canonical splice site is present, zoom to base level to review it. Not all non-canonical splice sites must be corrected, and in such cases they should be flagged with the appropriate comment. (Adding a 'Comment' is addressed in the section that details the 'Information Editor'). 
+
+Prior knowledge about the organism of interest may help the user decide whether a predicted non-canonical splice site is likely to be real. For instance, GC splice donors have been observed in many organisms, but less frequently than the GT splice donors described above. As mentioned above Apollo flags GC splice donors as non-canonical. To further complicate the problem, splice sites that are non-canonical, but found in nature, such as GC donors, may not be recognized by some gene prediction algorithms. In such cases a gene prediction algorithm that does not recognize GC splice donors may have ignored a true GC donor and selected another non-canonical splice site that is less frequently observed in nature. Therefore, if a non-canonical splice site that is rarely observed in nature is present, you may wish to search the region for a more frequent in-frame non-canonical splice site, such as a GC donor. If there is a close in-frame site that is more likely to be the correct splice donor, make this adjustment while zoomed at base level. 
+
+To assist in the decision to modify a splice site, download the translated sequences and use them to search well-curated protein databases, such as UniProt, to see if you can resolve the question using protein alignments. Incorrect splice sites would likely cause gaps in the alignments. If there does not appear to be any way to resolve the non-canonical splice, leave it as is and add a comment.
 
 
 ### 'Start' and 'Stop' Sites.
