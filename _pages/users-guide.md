@@ -121,32 +121,38 @@ The blue bar at the top holds top-level menus with the following functions:
 
 The ‘Navigation Panel’ at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and ‘Highlight a region’.
 
-The light yellow track at the top of the working area is the ‘User-created Annotations’ area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any non-translated elements to be modified. All transactions performed on the ‘User-created Annotations’ area can be reversed with the ‘Undo’ and ‘Redo’ options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
+The light yellow track at the top of the working area is the ‘User-created Annotations’ area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. All transactions performed on the ‘User-created Annotations’ area can be reversed with the ‘Undo’ and ‘Redo’ options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
 
-A list of ‘Available Tracks’ is available on the left, and it is possible to filter the tracks displayed in this list by typing on the ‘filter by text’ white box above the track list. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label includes a drop-down menu with options to 1) retrieve information ‘About this track’; 2) an option to ‘Pin to top’ that leaves the track displayed at the top of the screen and below the ‘User-created Annotations’ track as users scroll down to inspect other data; 3) the ‘Edit config’ option to bring up an editing window and modify the JSON file to configure the track’s display; and options to 4) ‘Delete’ the track or 5) ‘Save track data’ into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the JBrowse Configuration Guide at http://www.gmod.org/wiki/JBrowse_Configuration_Guide.
-
+A list of available 'Tracks' is available in tabulated format from the 'Annotator Panel', and it is possible to filter the tracks displayed in this list by typing on the ‘Search’ box above the list of tracks. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label in the 'Evidence' panel includes a drop-down menu with options to: 
+* Retrieve information ‘About this track’.
+* An option to 'Pin to top' leaves the track displayed at the top of the screen and below the ‘User-created Annotations’ track as users scroll down to inspect other data. 
+* The ‘Edit config’ option to bring up an editing window and modify the JSON file to configure the track’s display. 
+* Options to 'Delete' the track or 
+* 'Save track data' into GFF3 format. More information about the available tracks and how the data are processed for display can be found in the JBrowse Configuration Guide at http://www.gmod.org/wiki/JBrowse_Configuration_Guide.
+* 'Show' or hide track the label
+* 'Collapse' all genomic elements displayed in the track to simplify the view.
 
 # ANNOTATION
 
-Apollo allows annotators to modify and refine the precise location and structure of the genome elements that predictive algorithms cannot yet resolve automatically. Using Apollo annotators may corroborate or modify the structures of coding genes, pseudogenes, repeat regions, transposable elements, and non-coding RNAs (i.e: snRNA, snoRNA, rRNA, tRNA, and miRNA).
+Apollo allows annotators to modify and refine the precise location and structure of the genome elements that predictive algorithms cannot yet resolve automatically. Using Apollo, annotators may corroborate or modify the structures of coding genes, pseudogenes, repeat regions, transposable elements, and non-coding RNAs (i.e: snRNA, snoRNA, rRNA, tRNA, and miRNA).
 
 ## Annotating a gene
 
-Update Intro.
+Below are detail about both biological principles and technical aspects to consider when editing a gene prediction.
 
-### Select the Scaffold, Chromosome or Group where you wish to conduct your annotations. 
+### Select the scaffold, chromosome or linkage group where you wish to conduct your annotations. 
 
-### Search for a specific sequence
+#### Search for a specific sequence
 
 If you do not know the scaffold ID and have the sequence of a transcript or protein homolog related to your gene of interest, you might use the ‘Search Sequence’ feature to run a BLAT (BLAST-Like Alignment Tool) search. Querying the assembled genome using BLAT will determine the existence of a gene model prediction that is putatively homologous to your gene of interest. Click the ‘Tools’ item on the Apollo menu bar, and select ‘Sequence Search’ from the dropdown choices. Choose to run a Protein or Nucleotide BLAT search from the drop down menu as appropriate, and paste the string of residues to be used as query. Check the box labeled ‘Search all genomic sequences’ to search the entire genome.
 
-The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about ‘Highlights’ in section 3.2.
+The existence of paralogs may cause your query to match more than one scaffold or genomic range. Select the desired genomic range to be displayed in the Apollo Main Window. The result of your query will be displayed in the browser window behind the search box, highlighted in yellow. Close the window when you are satisfied with your results. You may read more about ‘Highlights’ below.
 
-* A word on Blat: Blat of DNA is designed to quickly find sequences of 95% and greater similarity of length 40 bases or more, and it may miss more divergent or shorter sequence alignments. On protein, BLAT finds sequences of 80% and greater similarity to the query of length 20+ amino acids. Higher speed at the price of lesser homology depth make Blat a commonly used tool to look up the location of a sequence in the genome or determine the exon structure of an mRNA. Learn more about Blat here.
+* A word on Blat: Blat of DNA is designed to quickly find sequences of 95% and greater similarity of length 40 bases or more, and it may miss more divergent or shorter sequence alignments. On protein, Blat finds sequences of 80% and greater similarity to the query of length 20+ amino acids. Higher speed at the price of lesser homology depth make Blat a commonly used tool to look up the location of a sequence in the genome or determine the exon structure of an mRNA. Learn more about Blat [here](https://genome.ucsc.edu/FAQ/FAQblat.html).
 
 ## Initiating an annotation
 
-If you have not already performed a Blat search to identify your gene of interest (see section 3.1.2), you may do so at this point using the ‘Sequence search’ feature from the ‘Tools’ tab on the menu bar. You may also navigate along the scaffold using the navigation arrows. Your gene of interest may appear on the forward (sense) or reverse (anti-sense) strand. Gene predictions are labeled with identifiers, and users may retrieve additional information by selecting the entire model and using the right-click menu to select the ‘View details’ item.
+If you have not already performed a Blat search to identify your gene of interest, you may do so at this point using the 'Sequence search' feature from the 'Tools' tab on the menu bar. You may also navigate along the scaffold using the navigation arrows. Your gene of interest may appear on the forward (sense) or reverse (anti-sense) strand. Gene predictions are labeled with identifiers, and users may retrieve additional information by selecting the entire model and using the right-click menu to select the 'View details'item.
 
 After locating your gene of interest, add as many gene prediction and evidence tracks as you consider necessary to inform your annotation by dragging and dropping them from the list of ‘Available Tracks’ on the left. Scroll through the different tracks of gene predictions and choose one that you consider most closely reflects the actual structure of the gene. It is also possible to filter the tracks displayed in this list by typing on the ‘filter by text’ box. You may base your decision on prior knowledge of the reliability of each gene prediction track (e.g., select an evidence-based gene model instead of an ab initio gene prediction). Alternatively, you may compare the gene prediction tracks to a BLAST alignment or other aligned data (e.g.: alignments of protein homologs, cDNAs and, RNAseq reads). To highlight your preferred gene model, double click on any exon or click on one of the introns to select the entire gene model. You may also choose exons from two or more separate tracks of evidence. Drag the highlighted model or all pieces of evidence into the ‘User-created Annotations’ area.
 
