@@ -9,7 +9,7 @@ This guide allows users to:
 * Become familiar with the environment of the Apollo annotation tool.
 * Understand Apollo’s functionality for the process of manual annotation.
 * Learn to corroborate and modify computationally predicted gene models using all available gene predictions and biological evidence available in Apollo.
-* Navigate through this user guide using the 'Table of Contents' at the bottom of the page
+* Navigate through this user guide using the 'Table of Contents' at the bottom of this page.
 
 --- 
 
@@ -280,47 +280,62 @@ When a feature is selected, the exon edges are marked with a red box. All other 
 
 ### Merge Two Gene Predictions from Different Scaffolds
 
-It is not possible to merge two annotations across scaffolds, however annotators should document the fact that the data support a merge in the ‘Comments’ table for both components. For standardization purposes, please use the following two prepared (canned) comments, adding the name of both models in every case:
+It is not yet possible to merge two annotations across scaffolds, however annotators should document the fact that the data support a merge in the ‘Comments’ table for both components. For standardization purposes, please use the following two prepared (canned) comments, adding the name of both models in every case:
 
-"RESULT OF: merging two or more gene models across scaffolds"
-"RESULT OF: merging two or more gene models. Gene models involved in merge:"
+* "RESULT OF: merging two or more gene models across scaffolds"
+* "RESULT OF: merging two or more gene models. Gene models involved in merge:"
 
 ### Split a Gene Prediction
 
-When different segments of a predicted protein align to two or more different families of protein homologs, and when the predicted protein does not align to any known protein over its entire length, one or more splits may be recommended. Transcript data may show evidence in support of a split; be sure to verify that it is not a case of alternative transcripts! A split can be created in one of two ways: 1) select the flanking exons using the right-click menu option ‘Split’, or 2) annotate each resulting fragment independently. You should obtain the resulting translation, and check it by searching a protein database, such as UniProt. Be sure to record the original ID for both annotations in the ‘Comments’ section.
+When different segments of a predicted protein align to two or more different families of protein homologs, and when the predicted protein does not align to any known protein over its entire length, one or more splits may be recommended. Transcript data may show evidence in support of a split; be sure to verify that it is not a case of alternative transcripts! 
+
+A split can be created in one of two ways: 
+* Select the flanking exons using the right-click menu option 'Split', or 
+* Annotate each resulting fragment independently. 
+
+You should obtain the resulting translation, and check it by searching a protein database, such as UniProt. Be sure to record the original ID for both annotations in the 'Comments' section.
 
 
 ### Frameshifts, Single base Errors, and Selenocysteine-containing Products
 
-Apollo allows annotators to make single base modifications or frameshifts that are reflected in the sequence and structure of any transcripts overlapping the modification. Note that these manipulations do NOT change the underlying genomic sequence. Changes are made on the DNA track with the right-click menu.
+Apollo allows annotators to make single base modifications and frameshifts that are reflected in the sequence and structure of any transcripts overlapping the modification. Note that these manipulations do NOT change the underlying genomic sequence. Changes are made on the DNA track with the right-click menu.
 
 If you determine that you need to make one of these changes, zoom in to the nucleotide level, and right-click over the genomic sequence to access the menu with options for introducing sequence changes such as insertions, deletions or substitutions. The selected nucleotide must be the starting point for each modification.
 
-The ‘Create Genomic Insertion’ option requires a string of nucleotide residues that will be inserted to the right of the cursor’s current coordinate. The ‘Create Genomic Deletion’ option requires the length of the deletion, starting with the nucleotide where the cursor is positioned. When using the ‘Create Genomic Substitution’ option, enter the string of nucleotide residues that will replace the ones on the DNA track.
+* The 'Create Genomic Insertion' option requires a string of nucleotide residues that will be inserted to the right of the cursor’s current coordinate. 
+* The 'Create Genomic Deletion' option requires the length of the deletion, starting with the nucleotide where the cursor is positioned. 
+* When using the 'Create Genomic Substitution' option, enter the string of nucleotide residues that will replace the ones on the DNA track.
 
-Once you have entered the modifications, Apollo will recalculate the corrected transcript and protein sequences, which can be obtained selecting the ‘Get Sequence’ option from the right-click menu. Since the underlying genomic sequence is reflected in all annotations that include the modified region you should alert the curators of your organism’s database using the ‘Comments’ section to report these CDS edits.
+Once you have entered the modifications, Apollo will recalculate the corrected transcript and protein sequences, which can be obtained selecting the 'Get Sequence' option from the right-click menu. Since the underlying genomic sequence is reflected in all annotations that include the modified region you should alert the curators of your organism’s database using the 'Comments' section to report these CDS edits.
 
-It is also possible to annotate special cases such as selenocysteine-containing proteins, or read-through ‘Stop’ signals using the right-click menu and selecting the ‘Set readthrough stop codon’ option. The current TGA ‘Stop’ exon will be highlighted in purple, and the next ‘Stop’ signal in frame will be used as the end of translation. Note that Apollo will automatically add the remaining amino acids to the resulting sequence. Add a comment to the ‘Comments’ section for this transcript to include this modification.
+It is also possible to annotate special cases such as selenocysteine-containing proteins, or read-through 'Stop' signals using the right-click menu and selecting the '‘Set readthrough stop codon' option. The current TGA 'Stop' exon will be highlighted in purple, and the next 'Stop' signal in frame will be used as the end of translation. Note that Apollo will automatically add the remaining amino acids to the resulting sequence. Add a comment in the 'Comments' section for this transcript to include this modification.
 
 
 # Annotating Repeat Regions, Transposable Elements, and Non-coding (nc) RNAs
 
 Apollo allows users to annotate a variety of ncRNAs and other regulatory elements.
 
-If you don’t know the location of the feature you wish to annotate, perform a Blat search to identify the sequence of interest using the ‘Sequence search’ feature from the ‘Tools’ tab on the menu bar (see also section 3.1.2). You may also navigate along the scaffold using the navigation arrows. All non-coding elements are labeled with identifiers, and users may retrieve additional information by selecting the feature and using the right menu to select the ‘View details’ item.
+If you don’t know the location of the feature you wish to annotate, perform a Blat search to identify the sequence of interest using the 'Sequence search' feature from the 'Tools' tab on the menu bar (see also section on how to 'Search for a specific sequence'). You may also navigate along the scaffold using the navigation arrows. All non-coding elements are labeled with identifiers, and users may retrieve additional information by selecting the feature and using the right menu to select the 'View details' item.
 
-Once the feature and track of interest are located in the ‘Evidence’ panel, select it and use right click over the desired feature, and choose the ‘Create New Annotation’ option to start an annotation. After the user chooses an element from the menu, the new annotation appears in the ‘User-created Annotations’ track. The type of annotation for any annotations already present in the ‘User-created Annotations’ cannot be changed.
+Once the genomic element and track of interest are located in the 'Evidence' panel, select it and use right click over the desired feature, and choose the 'Create New Annotation' option to start an annotation. After the user chooses an element from the menu, the new annotation appears in the 'User-created Annotations' track. The type of annotation for any annotations already present in the 'User-created Annotations' cannot be changed.
 
-Modifications such as editing boundaries, duplicating, and deleting the annotation, as well as the ‘History’, ‘Redo’ and ‘Undo’ functions, are possible for all non-coding features. Additional modifications such as ‘Split’ and ‘Make intron’ are also possible for ncRNAs.
+Modifications such as editing boundaries, duplicating, and deleting the annotation, as well as the 'History', 'Redo' and 'Undo' functions, are possible for all non-coding features. Additional modifications such as 'Split' and 'Make intron' are also possible for ncRNAs.
 
-All metadata about the annotation should be added using the ‘Information Editor’, as described in section 6.
+All metadata about the annotation should be added using the ‘Information Editor’, as described below.
 
 
 # The Information Editor
 
-Information about the ‘Name’, ‘Symbol’, and ‘Description’ for a Gene, Transcript, repeat region, transposable element, or non-coding RNAs can be modified in the ‘Information Editor’. There is also an option to report to the lead curators, informing them whether a manual annotation needs to be reviewed (‘Needs review’), or has already been ‘Approved’ using the ‘Status’ buttons. Users will also be able to input information about their annotations in fields that capture 1) ‘Comments’ on the process of annotation, 2) crossed references to other databases in ‘DBXRefs’, 3) additional ‘Attributes’ in a ‘tag/value’ format that pertain to the annotation, 4) references to any published data in the PubMed database using ‘Pubmed IDs’, and 5) Gene Ontology (GO) annotations, which can be added typing text or GO identifiers. The auto-complete function will retrieve the desired information. A drop-down menu at the top of the ‘Information Editor’ allows users to switch between isoforms while editing these metadata.
+Information about the 'Name', 'Symbol', and 'Description' for a Gene, Transcript, repeat region, transposable element, or non-coding RNAs can be modified in the 'Information Editor'. There is also an option to report to the lead curators, informing them whether a manual annotation needs to be reviewed ('Needs review'), or has already been 'Approved' using the 'Status' buttons. 
 
-All the information captured in these tables will be incorporated into the exported files of the ‘User-created Annotations’, and will appear in Column 9 of the GFF3 that is generated.
+Users will also be able to input information about their annotations in fields that capture 
+* 'Comments' on the process of annotation. 
+* Crossed references to other databases in 'DBXRefs'. 
+* Additional 'Attributes' in a 'tag/value' format that pertain to the annotation. 
+* References to any published data in the PubMed database using ‘Pubmed IDs’. 
+* Gene Ontology (GO) annotations, which can be added typing text or GO identifiers. The auto-complete function will retrieve the desired information. A drop-down menu at the top of the 'Information Editor' allows users to switch between isoforms while editing these metadata.
+
+All the information captured in these tables will be incorporated into the exported files of the 'User-created Annotations', and will appear in Column 9 of the GFF3 that is generated.
 
 
 ## Add Comments
@@ -444,7 +459,6 @@ We provide [additional documentation for installation and setup](http://genomear
 [Our demo page](../public-demo/) provides information on connecting to our demonstration site.
 Apollo is a member of the [GMOD project](http://gmod.org).
 
-## Table of Contents
+# Table of Contents
 1. This list will contain the toc (it doesn't matter what you write here)
 {:toc} 
-
