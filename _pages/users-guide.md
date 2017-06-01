@@ -340,21 +340,21 @@ All the information captured in these tables will be incorporated into the expor
 
 ## Add Comments
 
-When you are satisfied with your annotation, you may provide additional information in the form of ‘Comments’. For example, the ID of the gene prediction that you used to initiate the annotation presents useful information for your database curators. Functional information obtained from homologs may also be useful, e.g. homolog ID, description, gene name, gene symbol. You should also indicate the type of changes made to the annotation, and whether a gene is split across scaffolds, as described in previous sections.
+When you are satisfied with your annotation, you may provide additional information in the form of 'Comments'. For example, the ID of the gene prediction that you used to initiate the annotation presents useful information for your database curators. Functional information obtained from homologs may also be useful, e.g. homolog ID, description, gene name, gene symbol. You should also indicate the type of changes made to the annotation, and whether a gene is split across scaffolds, as described in previous sections.
 
-For each annotated element first click to select it, then use the right-click option to select ‘Information Editor’ from the menu. In the case of coding genes, pseudogenes, and ncRNAs the ‘Information Editor’ window displays information for both the gene and the transcript; users should determine whether the comment is more appropriate for the gene (e.g. a change in the gene symbol) or an individual transcript (e.g. type of alterations made). In the case of repetitive elements and transposable elements, the ‘Information Editor’ window has only one column.
+For each annotated element first click to select it, then use the right-click option to select 'Information Editor' from the menu. In the case of coding genes, pseudogenes, and ncRNAs the 'Information Editor' window displays information for both the gene and the transcript; users should determine whether the comment is more appropriate for the gene (e.g. a change in the gene symbol) or an individual transcript (e.g. type of alterations made). In the case of repetitive elements and transposable elements, the 'Information Editor' window has only one column.
 
-In the ‘Information Editor’ window click on the respective ‘Add’ button to start a new comment; a new row, labeled as ‘Enter new comment’, will appear. One click on this row reveals a drop-down menu option on the right, which displays canned comments to choose if they are available for your organism of interest. Alternatively, it is also possible to type custom comments. To edit an existing comment, click over the comment and begin typing, or replace it with a different canned comment. Comments that are no longer relevant or useful may be removed using the ‘Delete’ button at the bottom of the box.
+In the 'Information Editor' window click on the respective 'Add' button to start a new comment; a new row, labeled as 'Enter new comment', will appear. One click on this row reveals a drop-down menu option on the right, which displays canned comments to choose if they are available for your organism of interest. Alternatively, it is also possible to type custom comments. To edit an existing comment, click over the comment and begin typing, or replace it with a different canned comment. Comments that are no longer relevant or useful may be removed using the ‘Delete’ button at the bottom of the box.
 
 
 ## Add Database Crossed-references, PubMed IDs, and GO IDs
 
-When available, users should also include information to cross-referenced databases by adding the name of the database and the corresponding accession number for each gene or transcript to the ‘DBXRefs’ tables, respectively. Any additional information regarding published information in support of this annotation (e.g. whether the gene has already been part of a publication) should be included by adding a 'PubMed ID' using the provided field, and available functional information should be added using GO IDs as appropriate. The process to add information to these tables is the same as described for the ‘Comments’ tables.
+When available, users should also include information to cross-referenced databases by adding the name of the database and the corresponding accession number for each gene or transcript to the 'DBXRefs' tables, respectively. Any additional information regarding published information in support of this annotation (e.g. whether the gene has already been part of a publication) should be included by adding a 'PubMed ID' using the provided field, and available functional information should be added using GO IDs as appropriate. The process to add information to these tables is the same as described for the 'Comments' tables.
 
 
 ## Add Attributes
 
-Any additional information about the gene model or transcript that can be included in the form of a ‘tag/value’ entry, and provides further evidence in support of the manual annotation can be captured on the ‘Attributes’ table. The process to add information to these tables is the same as described for the ‘Comments’ tables.
+Any additional information about the gene model or transcript that can be included in the form of a 'tag/value' entry, and provides further evidence in support of the manual annotation can be captured on the 'Attributes' table. The process to add information to these tables is the same as described for the 'Comments' tables.
 
 
 # (No need for) Saving your Annotations
@@ -364,13 +364,13 @@ Apollo immediately saves your work, automatically recording it on the database. 
 
 # Exporting Data
 
-The user-created annotations may be exported as GFF3 or FASTA formatted files. These operations may be done for either a single scaffold, or to include user-created annotations from the entire assembled genome. To export the user-created annotations from a single scaffold, click on the track labeled ‘User-created Annotations ’, then click on the ‘Save track data’ option, and choose either the ‘GFF3’ or ‘FASTA’ options. To export GFF3, FASTA, or Chado formatted files from one or more scaffolds, or from the entire assembly, you may also go to the scaffold selection page and select all scaffolds of interest. Click on the ‘File’ menu at the top, and hover the mouse over the word ‘Export’ to choose one of the options available. Menu items for ‘GFF3’, ‘FASTA’, and ‘Chado’ will appear in your screen.
+The user-created annotations may be exported as GFF3 and FASTA formatted files. These operations may be done for either a single scaffold, or to include user-created annotations from the entire assembled genome. See the section on 'Ref Sequence Tab' under 'Annotator Panel' to learn more about how to export data.
 
 Data from each of the evidence and prediction tracks can also be exported. GFF3 formatted files of the visible region on the Apollo screen, as well as files containing data from the entire scaffold/chromosome can be exported. The data will be formatted according to the original data used to display each track. For instance, RNA-Seq reads could be exported either as GFF3 or BED file formats.
 
-# Evidence Provided in the Public Demo
+# Public Demo
 
-The Apollo Demo was built with the genome of the honey bee (Apis mellifera).
+The Apollo Demo uses the genome of the honey bee (_Apis mellifera_). Below are details about the experimental data provided as supporting evidence. 
 
 ## Evidence in support of protein coding gene models
 
