@@ -97,7 +97,7 @@ The following are options for Users with Administrative Privileges.
 
 <img src="/images/Web_Apollo_User_Guide_Fig1-2017.png" width="800" height="491">
 
-#####Figure 1. Apollo Annotation Editor Overview. 
+##### Figure 1. Apollo Annotation Editor Overview. 
 This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The ‘Navigation Panel’ runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The ‘User-created Annotations’ panel contains the manual annotations. C) The ‘Evidence’ panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the ‘Evidence’ panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
 The blue bar at the top holds top-level menus with the following functions:
@@ -188,7 +188,7 @@ The DNA track and annotation track are visible. The DNA track includes the sense
 
 ### Splice Sites
 
-In most Eukaryotes the majority of splice sites at the exon/intron boundaries appear as 5’-…exon]GT/AG[exon…-3’. All other splice sites are here called ‘non-canonical’ and are indicated in Apollo with an orange circle with a white exclamation point inside, placed over the edge of the offending exon. When alternative transcripts are added, be sure to inspect each splice site to check for any changes that the changes.
+In most Eukaryotes the majority of splice sites at the exon/intron boundaries appear as ```5’-…exon]GT/AG[exon…-3’```. All other splice sites are here called ‘non-canonical’ and are indicated in Apollo with an orange circle with a white exclamation point inside, placed over the edge of the offending exon. When alternative transcripts are added, be sure to inspect each splice site to check for any changes that the changes.
 
 If a non-canonical splice site is present, zoom to base level to review it. Not all non-canonical splice sites must be corrected, and in such cases they should be flagged with the appropriate comment. (Adding a 'Comment' is addressed in the section that details the 'Information Editor'). 
 
@@ -199,32 +199,31 @@ To assist in the decision to modify a splice site, download the translated seque
 
 ### 'Start' and 'Stop' Sites.
 
-By default, Apollo will calculate the longest possible open reading frame (ORF) that includes canonical 'Start' and 'Stop' signals within the predicted exons. To check for accuracy of 'Start' and 'Stop' signals, you may align the translated sequence to a known protein database, such as UniProt, to determine whether the ends of the protein sequence corresponds with those of known proteins.
+By default, Apollo will calculate the longest possible open reading frame (ORF) that includes canonical 'Start' and 'Stop' signals within the predicted exons. To check for accuracy of 'Start' and 'Stop' signals, you may use the translated sequence to query a known protein database, such as UniProt, to determine whether the ends of the protein sequence corresponds with those of known proteins.
 
-If it appears that Apollo did not calculate the correct 'Start' signal, the user can modify it. To set the 'Start' codon manually, position the cursor over the first nucleotide of the candidate 'Start' codon and select the ‘Set translation start’ option from the right-click menu. Depending on evidence from a protein database search or additional evidence tracks, you may wish to select an in-frame Start codon further up or downstream. An upstream 'Start' codon may be present outside the predicted gene model, within a region supported by another evidence track. See section 4.3.3 on how to ‘Add an exon’. When necessary, it is also possible to 'Set translation end' from the right-click menu.
+If it appears that Apollo did not calculate the correct 'Start' signal, the user can modify it. To set the 'Start' codon manually, position the cursor over the first nucleotide of the candidate 'Start' codon and select the ‘Set translation start’ option from the right-click menu. Depending on evidence from a protein database search or additional evidence tracks, you may wish to select an in-frame 'Start' codon further up or downstream. An upstream 'Start' codon may be present outside the predicted gene model, within a region supported by another evidence track. See section below on how to ‘Add an exon’. When necessary, it is also possible to 'Set translation end' from the right-click menu.
 
-Note that the 'Start' codon may also be located in a non-predicted exon further upstream. If you cannot identify that exon, add the appropriate comment (using the transcript comment section in the ‘Comments’ table of the ‘Information Editor’ as described in section 6).
+Note that the 'Start' codon may also be located in a non-predicted exon further upstream. If you cannot identify that exon, add the appropriate comment (using the transcript comment section in the ‘Comments’ table of the ‘Information Editor’ as described below).
 
-In rare cases, the actual 'Start' codon may be non-canonical (non-ATG). Check whether a non-canonical 'Start' codon is usually present in homologs of this gene, and/or check whether this is a likely occurrence in this organism. If appropriate, you may override the predicted 'Start' by manually setting it to a non-canonical 'Start' codon, choosing the one that most closely reflects what you know about the protein, and has the best support from the biological evidence tracks. Add the appropriate comment (using the transcript comment section in the ‘Comments’ table of the ‘Information Editor’ as described in section 6).
+In rare cases, the actual 'Start' codon may be non-canonical (non-ATG). Check whether a non-canonical 'Start' codon is usually present in homologs of this gene, and/or check whether this is a likely occurrence in this organism. If appropriate, you may override the predicted 'Start' by manually setting it to a non-canonical 'Start' codon, choosing the one that most closely reflects what you know about the protein, and has the best support from the biological evidence tracks. Add the appropriate comment (using the transcript comment section in the ‘Comments’ table of the ‘Information Editor’ as described below).
 
-In some cases, a 'Stop' codon may not be automatically identified. Check to see if there are data supporting a 3’ extension of the terminal exon or additional 3’ exons with valid splice sites. See section 4.3.3 on how to ‘Add an exon’. Each time you add an exon region, whether by extending an existent exon or adding a new one, Apollo recalculates the longest ORF to identity 'Start' and 'Stop' signals, allowing you to determine whether a Stop codon has been incorporated after each editing step.
+In some cases, a 'Stop' codon may not be automatically identified. Check to see if there are data supporting a 3’ extension of the terminal exon or additional 3’ exons with valid splice sites. See section below on how to ‘Add an exon’. Each time you add an exon region, whether by extending an existent exon or adding a new one, Apollo recalculates the longest ORF to identity 'Start' and 'Stop' signals, allowing you to determine whether a 'Stop' codon has been incorporated after each editing step.
 
 
 ### Predicted Protein Products.
 
-If any of your manipulations have thrown an exon out of frame, or caused other drastic changes to the translated sequence, Apollo will warn you by changing the display of from a light-blue protein-coding stretch to a truncated model shown as a darker blue, narrower rectangle.
+If any of your manipulations have thrown an exon out of frame, or caused other drastic changes to the translated sequence, Apollo will warn you by changing the display of the model in the 'User-created Annotations area' from a light-blue protein-coding stretch to a truncated model shown as a darker blue, narrower rectangle.
 
-If the annotation looks good, obtain the protein sequence (see section 4.3.1) and use it to search a protein database, such as UniProt or NCBI NR. Keep in mind that the best Blast hit may be the exact prediction from which you initiated your annotation; you should not consider the identical protein from your organism as external evidence supporting the annotation. Instead, look at alignments to proteins from other organisms.
+If the annotation looks good, obtain the protein sequence (see 'Get Sequences' section below) and use it to search a protein database, such as UniProt or NCBI NR. Keep in mind that the best Blast hit may be the exact prediction from which you initiated your annotation; you should not consider the identical protein from your organism as external evidence supporting the annotation. Instead, look at alignments to proteins from other organisms.
 
 
 ## Additional Functionality
 
 
-<center>
 <img src="/images/Web_Apollo_User_Guide_Fig3.png" width="150" height="335">
-<br>
-<b>Figure 3.</b> Additional functionality.This is the right-click menu.
-</center>
+
+##### Figure 3. Additional functionality.
+This is the right-click menu.
 
 
 ### Get Sequences
