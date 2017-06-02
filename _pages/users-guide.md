@@ -1,7 +1,7 @@
 ---
 title: User Guide
 type: single
-permalink: /markdown-users-guide/
+permalink: /users-guide/
 ---
 
 This guide allows users to:
