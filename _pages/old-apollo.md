@@ -7,9 +7,7 @@ permalink: /older-apollo/
 
 ## Looking for Desktop Apollo?
 
-If your team is currently performing manual annotations using the desktop version of Apollo, which can be downloaded below.
-
-Please be aware that we are no longer developing this software, and support for its use has been discontinued.
+If your team is currently performing manual annotations using the desktop version of Apollo, please be aware that we are no longer developing this software and support for its use has been discontinued.
 
 All the functionality you came to expect from the desktop version of Apollo and new annotation functions are now available on Apollo. Give it a try at our [Public Demo](../public-demo/index.md), built with the genome of the honey bee (<i>Apis mellifera</i>).
 
@@ -18,7 +16,7 @@ All the functionality you came to expect from the desktop version of Apollo and 
 
 
 <h2>
-<a href="http://genomearchitect.github.io">Current Apollo Website &rarr;</a>
+<a href="http://genomearchitect.github.io">Go back to current Apollo version &rarr;</a>
 </h2>
 <h3 align="center"><font color="red">Please be aware that we are no longer developing the desktop version of Apollo and that support for its use has been discontinued.</font></h3>
 <br>

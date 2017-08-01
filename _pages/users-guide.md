@@ -35,7 +35,9 @@ When annotating gene models using Apollo, remember that you are looking at a 'fr
 
 To begin annotating a gene, visit the [Apollo Demo](http://genomearchitect.org/demo/). When prompted, use the following credentials:
 
-Username: demo[at]demo[dot]com             Password: demo
+Username: demo[at]demo[dot]com
+
+Password: demo
 
 Users may choose to browse the genomes of publicly available organisms, by clicking on the option at the bottom of the Login box. 
 
