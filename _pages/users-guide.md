@@ -81,7 +81,8 @@ The Annotator Panel grants curators easy access to the genome with a series of f
 The following are options for Users with Administrative Privileges.
 
 ##### Organism Tab: 
-* All available organisms, as well as statistics on the number of annotations and reference sequences per organism, will be isted here in tabular format. The bottom of the panel displays details about each selected organism.  
+* All available organisms, as well as statistics on the number of annotations and reference sequences per organism, will be isted here in tabular format. The bottom of the panel displays details about each selected organism. 
+* __Translation tables__ can be set per organism using the _'Details'_ panel: to replace the translation table (default or set by admin) for any given organism, enter a different table identifier in the field labeled as _'Non-default Translation Table'_.  
 
 ##### Users Tab: 
 * A list of users is available here in tabular format. Use the 'Search' box to find a user of interest, and the '+ Create User' button for new entries. 
