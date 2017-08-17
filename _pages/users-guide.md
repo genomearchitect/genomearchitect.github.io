@@ -103,6 +103,8 @@ The following are options for Users with Administrative Privileges.
 ##### Figure 1. Apollo Annotation Editor Overview. 
 This view shows an annotation in progress. The main annotation window is similar to the JBrowse window. A) The 'Navigation Panel' runs along the top of the main panel; it includes arrows to move left and right, and two levels of zooming. The drop-down box is used to select the assembly fragment (e.g. scaffold, chromosome, linkage group, etc.) where you wish to conduct your annotation, and the text-box is used to manually enter its coordinates. B) The 'User-created Annotations' panel contains the manual annotations. C) The 'Evidence' panel includes all tracks with experimental data aligned to the reference assembled genome. Annotators create annotations by first selecting and dragging a model from the 'Evidence' panel to the ‘User-created Annotations’ panel. D) The 'Annotator Panel' allows curators to easily navigate the genome, and to display and export annotations. 
 
+### Top Level Menus
+
 The blue bar at the top holds top-level menus with the following functions:
 
 * 'File':
@@ -119,9 +121,17 @@ The blue bar at the top holds top-level menus with the following functions:
 * The 'Help' tab includes links to a list of helpful commands for Apollo, details about the version of Apollo in use and about JBrowse, as well as a link to explore Apollo Web Services options.
 * On the upper right corner, a box with the username offers the option to logout. When logged out, the word 'Login' will be displayed instead of the username.
 
+### Navigation Panel
+
 The 'Navigation Panel' at the top of the window (A in Fig 1.) houses controls for localization within each section of the assembly (e.g. chromosome, scaffold, etc.), controls to move to a different scaffold, and a button to select and 'Highlight a region'.
 
-The light yellow track at the top of the working area is the 'User-created Annotations' area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. All transactions performed on the 'User-created Annotations' area can be reversed with the 'Undo' and 'Redo' options. The 'History' of all operations performed on each annotation is also available. To display the menu of options select the annotation in progress and right-click over it.
+### User-Created Annotations Area
+
+The light yellow track at the top of the working area is the 'User-created Annotations' area (Fig 1. B), where users will drag complete gene models, individual exons, as well as any other genomic elements that need to be modified. 
+
+All transactions performed on the 'User-created Annotations' area can be reversed or re-done with the 'Undo' and 'Redo' options, and the 'History' of all operations performed on each annotation is also available. These options work in similar manner as the Back' and 'Forward' buttons in your web browser; that is, users are still able to see the 'future' edits after having reverted to a previous state in the history of edits they have conducted for a given annotation. As well, conducting an edit, after reverting to a previous state, will drop the 'future' edits in the 'History' stack and reset the stack. To display the menu of options select the annotation in progress and right-click over it.
+
+### Experimental Evidence
 
 A list of available 'Tracks' is visible in tabulated format from the 'Annotator Panel' (Fig. 1 D), and it is possible to filter the tracks displayed in this list by typing on the ‘Search’ box above the list of tracks. Clicking the box in front of each item in the list of available tracks will display the track in the ‘Evidence’ panel (Fig 1. C), allowing visualization data from gene predictions, evidence sets, and regulatory elements. The track’s label in the 'Evidence' panel includes a drop-down menu with options to: 
 * Retrieve information ‘About this track’.
