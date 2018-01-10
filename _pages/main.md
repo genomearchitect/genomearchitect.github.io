@@ -9,16 +9,14 @@ permalink: /
 ---
 ### First instantaneous, collaborative genomic annotation editor available on the Web. 
 
+
+{: .notice--info}
 Apollo is designed to support geographically dispersed researchers, and the work of a distributed community is coordinated through automatic synchronization: all edits in one client are instantly pushed to all other clients, allowing users to see annotation updates from collaborators in real-time during the editing process.  There are no installation requirements for Annotators!
 
-{: .notice--info}
-Try Apollo on our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  
-
-{: .notice--info}
-[Download the latest Apollo release](https://github.com/GMOD/Apollo/releases/latest) off of Github to get started.  Documentation for the Apollo software is also avaible via [read the docs](http://genomearchitect.readthedocs.io/).
-
-{: .notice--info}
-{% include contact.md %}
+- [Download the latest Apollo release](https://github.com/GMOD/Apollo/releases/latest) from [Github](https://github.com/GMOD/Apollo/).
+- [Documentation](http://genomearchitect.readthedocs.io/) and available [Web Services](http://demo.genomearchitect.org/Apollo2/WebServices/) for installed instances.
+- Try Apollo on our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  
+- {% include contact.md %}
 
 ### Highlighted features
 
