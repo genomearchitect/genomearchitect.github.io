@@ -17,7 +17,7 @@ If you would like to also experience the "administrator user" please send us a r
 
 The "Ref Sequence" selection panel on the right allows you to view all available reference sequences (e.g. scaffolds, groups, chromosomes, etc) and conduct bulk operations on those sequences (for example: exporting data).
 
-You can choose a different organism from the drop-down menu on the upper left corner of the annotator panel. Please be aware you have access to the following "organisms": "Honeybee", "Human-hg38", "Cow", and "Yeast". Choosing any of the other available options will show an error warning alerting you that you do not have sufficient permissions to perform the operation. Should you encounter this error, simply return to one of the organisms listed above.
+You can choose a different organism from the drop-down menu on the upper left corner of the annotator panel. Please be aware you have access to the following organisms: Honeybee, Human-hg38, Yeast, and Volvox Fictious (the JBrowse demonstration sample organism). Choosing any of the other available options will show an error warning alerting you that you do not have sufficient permissions to perform the operation. Should you encounter this error, simply return to one of the organisms listed above.
 
 If you are new to Apollo, we recommend that you read through our [User Guide](../users-guide/) to learn more about the software and its functionality.
 
