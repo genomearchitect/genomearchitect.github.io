@@ -62,7 +62,8 @@ Apollo is supported by the National Institutes of Health grant [5R01GM080203](ht
 Pre-print for Apollo 2 paper:  https://www.biorxiv.org/content/early/2019/01/06/512376
 
 Please cite the use of Apollo 2 as: 
-Dunn NA, Munoz-Torres MC, Unni D, Yao E, Rasche E, Bretaudeau A, Holmes IH, Elsik CG; Lewis SE (2017). GMOD/Apollo: Apollo2.0.6(JB#29795a1bbb) Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2254462.svg)](https://doi.org/10.5281/zenodo.2254462)
+Dunn NA, Munoz-Torres MC, Unni D, Yao E, Rasche E, Bretaudeau A, Holmes IH, Elsik CG; Lewis SE (2017). GMOD/Apollo: 2.2.0 JB#1.15.4-release
+ [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2254462.svg)](https://doi.org/10.5281/zenodo.2254462)
 
 Please cite the use of Apollo 1 or 2 as: Lee E, Helt GA, Reese JT, Munoz-Torres MC, Childers CP, Buels RM, Stein L, Holmes IH, Elsik CG, Lewis SE. 2013. Apollo: a web-based genomic annotation editing platform. [Genome Biol 14:R93](http://genomebiology.com/2013/14/8/R93/abstract). 
 
