@@ -43,6 +43,7 @@ Apollo is designed to support geographically dispersed researchers, and the work
 * [Installation and configuration guide](http://genomearchitect.readthedocs.org/en/latest/)
 * [Roadmap in github milestones](https://github.com/GMOD/Apollo/milestones)
 * [Instructions on Apollo Web API, and Tutorial at GMOD Summer School](documentation)
+* [Example of editing usage](https://www.slideshare.net/MonicaMunozTorres/apollo-workshop-ags2017-editing-functionality) 
 * [Report issues on Github](https://github.com/GMOD/Apollo/issues)
 * {% include contact.md %}
 
