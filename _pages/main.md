@@ -67,5 +67,3 @@ Nathan A. Dunn , Deepak R. Unni, Colin Diesh, Monica Munoz-Torres, Nomi L. Harri
 ##### Older versions
 Please cite the use of Apollo 1 as: Lee E, Helt GA, Reese JT, Munoz-Torres MC, Childers CP, Buels RM, Stein L, Holmes IH, Elsik CG, Lewis SE. 2013. Apollo: a web-based genomic annotation editing platform. [Genome Biol 14:R93](http://genomebiology.com/2013/14/8/R93/abstract). 
 
-<small>Image credits: Bee CopyRight of www.AlexanderWild.com | DNA image ShutterStock.com</small>
-
