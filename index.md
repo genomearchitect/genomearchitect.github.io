@@ -1,4 +1,4 @@
-# Apollo
+<meta http-equiv="refresh" content="-1;url=http://genomearchitect.readthedocs.io/en/latest/" />
 
 ### First instantaneous, collaborative genomic annotation editor available on the Web.
 

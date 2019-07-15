@@ -18,9 +18,7 @@ Apollo is designed to support geographically dispersed researchers, and the work
 - Try Apollo on our [Public Demo](demo), built with the genome of several organism including the honey bee (<i>Apis mellifera</i>).  
 - {% include contact.md %}
 
-A
 <meta http-equiv="refresh" content="-1;url=http://genomearchitect.readthedocs.io/en/latest/" />
-B
 
 ### Highlighted features
 
