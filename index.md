@@ -1,4 +1,7 @@
+
+C
 <meta http-equiv="refresh" content="-1;url=http://genomearchitect.readthedocs.io/en/latest/" />
+D
 
 ### First instantaneous, collaborative genomic annotation editor available on the Web.
 
