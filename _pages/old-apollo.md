@@ -5,6 +5,8 @@ permalink: /older-apollo/
 
 ---
 
+<meta http-equiv="refresh" content="1;url=http://genomearchitect.readthedocs.io/" />
+
 ## Looking for Desktop Apollo?
 
 If your team is currently performing manual annotations using the desktop version of Apollo, please be aware that we are no longer developing this software and support for its use has been discontinued.

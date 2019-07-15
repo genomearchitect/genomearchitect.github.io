@@ -3,6 +3,8 @@ title: Documentation
 permalink: /documentation/
 ---
 
+<meta http-equiv="refresh" content="1;url=https://genomearchitect.readthedocs.io/" />
+
 Access the installation and user guides, as well as instructions on Apollo Web API and the Apollo Tutorial at the GMOD Summer School.
 
 * [Apollo User Guide](http://genomearchitect.org/users-guide)

@@ -4,6 +4,8 @@ type: single
 permalink: /users-guide/
 ---
 
+<meta http-equiv="refresh" content="1;url=https://genomearchitect.readthedocs.io/en/latest/UsersGuide.html" />
+
 This guide allows users to:
 
 * Become familiar with the environment of the Apollo annotation tool.

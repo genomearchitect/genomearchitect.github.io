@@ -3,6 +3,7 @@ title: Public Demo
 permalink: /demo/
 ---
 
+<meta http-equiv="refresh" content="1;url=https://genomearchitect.readthedocs.io/en/latest/Demo.html" />
 
 {: .notice--warning}
 This Apollo demo is continuously in development and it may change at any time or go down for maintenance.  This is a public demo, which grants anyone access to read and modify the data; this means that data might change at any point, even while you are perusing the demo, if someone else concurrently modifies the same annotation. There is no privacy with these data.

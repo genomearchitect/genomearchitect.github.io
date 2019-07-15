@@ -3,6 +3,7 @@ title: Community Servers
 type: page
 permalink: /communityservers/
 ---
+<meta http-equiv="refresh" content="1;url=https://genomearchitect.readthedocs.io/" />
 
 We've provided servers to the community.  
 

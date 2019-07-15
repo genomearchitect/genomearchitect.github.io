@@ -3,6 +3,7 @@ title: About Us
 type: page
 permalink: /about/
 ---
+<meta http-equiv="refresh" content="1;url=https://genomearchitect.readthedocs.io/" />
 
 The Apollo project is a collaboration between Suzanna Lewis's group at 
 Lawrence Berkeley National Laboratory ([BBOP, the Berkeley Bioinformatics Open-source Projects group](http://berkeleybop.org/)), 
