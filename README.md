@@ -1,3 +1,6 @@
+
+# This site is now archived.  Current content at https://genomearchitect.readthedocs.io/en/latest/ or https://github.com/GMOD/Apollo.
+
 # Website for bbop
 
 This should be viewed on http://genomearchitect.github.io
